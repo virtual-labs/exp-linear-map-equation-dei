@@ -1,1 +1,1 @@
-### Aim of the experiment
+To understand consistency and solution set of linear map equations.
