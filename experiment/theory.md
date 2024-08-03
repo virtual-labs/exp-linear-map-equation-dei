@@ -53,4 +53,5 @@ If T:R<sup>n</sup>→R<sup>m</sup> is a one-to-one linear transformation, then i
 #### 4.2. 
 If T:R<sup>n</sup>→R<sup>m</sup>  is a one-to-one linear transformation and n=m, then T is onto and hence solution of (i) exists. Further, T being one-to-one solution is unique.
 ### 5. Examples:
-(i) Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y)=(y, x), where x, y&isin;R. Consider the linear map equation T(X)=b, where b=(1, 4). Then solution of linear map equation exists because b&isin;Range of T. Further the solution is unique, since T is one-to-one.
+(i) Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y)=(y, x), where x, y&isin;R. Consider the linear map equation T(X)=b, where b=(1, 4). Then solution of linear map equation exists because b&isin;Range of T. Further the solution is unique, since T is one-to-one.<br>
+(ii) Let T:R<sup>2</sup>→R<sup>3</sup> be the linear transformation defined by T(x, y)=(x, -y, 0), where x, y&isin;R. Consider the linear map equation T(X)=b, where b=(1, 4, 1). Notice that this linear map equation is not consistent and T is one-to-one. This shows that solution of linear map equation may not exist even if T is one-to-one.
