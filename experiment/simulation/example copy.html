@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+     <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+     <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+
+
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 100vh;
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+        /*background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
+        background-color: whitesmoke;
+        font-size: 1.5rem;
+    }
+    .pagehead{
+      display: block;
+      text-align: center;
+      border-top: 2px solid lightseagreen;
+      background: linear-gradient(yellow, lightseagreen);
+      padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+      float:center;
+      margin: 0.5rem;
+      font-size: 32px;
+    }
+    .container{
+        /*border: 1px solid #717377;*/
+        padding: 2rem;
+        border-radius: 1.2rem;
+        background-color: lightyellow;
+        margin-left: 29%;
+        margin-right: 29%;
+        /*background: transparent;
+        background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
+        box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
+    }
+    .container:hover{
+        border-radius: 0.5rem;
+        box-shadow: 0px 3px 15px rgba(133, 115, 119, 1.0);
+    }
+    #mapimg{
+        width: 30rem;
+        height: auto;
+    }
+    .next{
+        background-color: #04AA6D;
+        color: white;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        align-content: center;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        width:8rem;
+        float:right;
+    }
+    .next:hover {
+      background-color: #ada;
+      color: black;
+    }
+    .previous{
+        display: block;
+        float:left;
+        background-color: #04AA6D;
+        color: white;
+        font-size: 18px;
+        margin-top: 0.5rem;
+        align-content: center;
+        text-align: center;
+        padding: 8px 16px;
+        text-decoration: none;
+        width:5rem;
+    }
+    .previous:hover {
+      background-color: #ada;
+      color: black;
+    }
+    canvas {
+    display: block;
+}
+.plane{
+    cursor: crosshair;
+}
+.boxhead{
+    margin:0.5rem 0.5rem 0.5rem 0.5rem;
+}
+input{
+    
+    align-content: center;
+    text-align: center;
+    font-style:bold italic;
+    color:white;
+    border:.5px solid red;
+    color: black;
+}
+
+.subbtn{
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+/* container */
+.responsive-two-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-two-column-grid > * {
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.container2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text {
+            flex: 2;
+            padding: 10px;
+        }
+        .image {
+            flex: 1;
+            padding: 10px;
+            max-width: 290px; /* Adjust the max-width as needed */
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3   0px;
+        }  
+</style>
+<body>
+    <h2 class="pagehead">Example</h2>
+<div class="container">
+    <!-- <button class="subbtn" id="rng"  onclick="">Range T </button><br> -->
+    <div class="container2">
+        <div class="text">
+            <p><li>T:R<sup>2</sup>&rarr;R<sup>2</sup><br>&emsp; T(a, b) = (a, 2a); (a, b) &isin; R<sup>2</sup></li><br></p>
+        </div>
+        <div class="image">
+            <img src="images/range.png" id="rngimg" alt="RangeT">
+        </div>
+    </div>
+
+   
+    <div class="case5">
+        <!-- <button class="subbtn" id="rng"  onclick=" ">Case 1</button> -->
+        <p style="font-size: 24px;" ><b>&emsp;Equation 1:</b> T(x) = b, where b = (1, 2)</p>
+        
+        <ul style="margin-left:15px;"><p style="font-size: 20px;" ><li> What do you infer? <input id="btn1" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="Inconsistent"></li></p>
+        <p id="c5ld" style="font-size: 20px;"></p>
+        <p id="c5li" style="font-size: 20px;"></p>
+        <form id="solutionForm">
+        <p id="sol" style="font-size: 20px;"><li>Solutions: 
+           
+                <label for="p">p:</label>
+                <input type="number" id="p" name="p" required>
+              
+                <label for="q">q:</label>
+                <input type="number" id="q" name="q" required>
+                <br>
+                <input type="submit" value="Check Answer" style="margin-left: 390px; margin-top: 20px;">
+            </form>
+            <p id="result"></p>
+            <p id="ressol" style="font-size: 20px;" ></p></li></ul>
+        </p>
+    </div>
+    <div class="case5">
+        <!-- <button class="subbtn" id="rng"  onclick=" ">Case 2</button> -->
+        <p style="font-size: 24px;" ><b>&emsp;Equation 2:</b> T(x) = b, where b = (2, 3)</p>
+        
+       <ul style="margin-left:15px;"><li><p style="font-size: 24px;" > What do you infer? <input id="btn3" type="submit" onclick="c6ld('btn3'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn4.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn4" type="submit" onclick="c6li('btn4'); this.style.backgroundColor = 'red'; btn3.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="Inconsistent"></li></p> 
+        <p id="c6ld" style="font-size: 20px;"></p>                                             
+        <p id="c6li" style="font-size: 20px;"></p></ul>
+    </div>
+
+
+    <button class="subbtn" id="cle"  onclick="ConstLE()">Construction of more equations</button><br>
+    <div id="Cle" style="display: none;">
+     <p>&emsp;Choose b = (r, s) by entering values of r and s</p>
+        <label for="xInput">&emsp;r:</label>
+        <input type="number" id="xInput">
+        <label for="yInput">s:</label>
+        <input type="number" id="yInput">
+        <button onclick="plotPoint()">Submit</button><br>
+
+   
+        <p id="equation"></p> </div>
+        <p id="constbtn" style="display: none;"><b>&emsp;Consistency :</b></p><br>
+        <div id="canvas" class="responsive-two-column-grid" style="display: none;">
+            <div>
+                <canvas id="my-canvas" width="250" height="250"></canvas>
+            </div>
+            <div>
+                <p id='printpoint1cords'></p>
+                
+            </div>
+        </div>
+
+        <p id='solutionexist' style="display: none;"></p>
+        
+        
+        
+        
+</div>
+<p style="float: center; align-content:right;">
+<a href="./" class="previous">&laquo; Previous</a></p>
+
+
+<script>
+
+function c5ld(){
+       document.getElementById('c5ld').innerHTML='<span style="color:blue";>CORRECT!</span><br><br> Reason: b &equiv; (1, 2) = T(1, 4) &rArr; b &isin; Range T &rArr; Consistent  ';
+       document.getElementById('c5li').innerHTML='';
+   }
+   function c5li(){
+       document.getElementById('c5li').innerHTML='<span style="color:red";>INCORRECT!</span><br><br> Reason: b &equiv; (1, 2) = T(1, 4) &rArr; b &isin; Range T &rArr; Consistent  ';
+       document.getElementById('c5ld').innerHTML='';
+   }
+   function c6ld(){
+       document.getElementById('c6ld').innerHTML='<span style="color:red";>INCORRECT!</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range T <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = T(p, q) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (p, 2p) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  p = 2 , 2p = 3, a contriduction';
+       document.getElementById('c6li').innerHTML='';
+   }
+   function c6li(){
+       document.getElementById('c6li').innerHTML='<span style="color:blue";>CORRECT!</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range T <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = T(p, q) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (p, 2p) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  p = 2 , 2p = 3, a contriduction';
+       document.getElementById('c6ld').innerHTML='';
+   }
+
+function rngfun(){
+        document.getElementById('rngimg').style.display="";
+       
+    }
+    function ConstLE(){
+        document.getElementById('Cle').style.display="";
+       
+    }
+    function Consistency(){
+        
+       
+    }
+
+</script>
+
+
+
+</body>
+
+<script type="text/javascript" charset="utf-8">
+
+var grid_size = 12;
+var x_axis_distance_grid_lines = 10;
+var y_axis_distance_grid_lines = 5;
+var x_axis_starting_point = { number: 1, suffix: '' };
+var y_axis_starting_point = { number: 1, suffix: '' };
+
+var canvas = document.getElementById("my-canvas");
+
+var ctx = canvas.getContext("2d");
+
+var canvas_width = canvas.width;
+var canvas_height = canvas.height;
+
+var num_lines_x = Math.floor(canvas_width/grid_size);
+var num_lines_y = Math.floor(canvas_height/grid_size);
+        
+// Draw grid lines along X-axis
+for(var i=0; i<=num_lines_x; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    
+    // If line represents X-axis draw in different color
+    if(i == x_axis_distance_grid_lines) 
+        ctx.strokeStyle = "#000000";
+    else
+        ctx.strokeStyle = "#dcdcdc";
+    
+    if(i == num_lines_x) {
+        ctx.moveTo(0, grid_size*i);
+        ctx.lineTo(canvas_width, grid_size*i);
+    }
+    else {
+        ctx.moveTo(0, grid_size*i+0.5);
+        ctx.lineTo(canvas_width, grid_size*i+0.5);
+    }
+    ctx.stroke();
+}
+
+// Draw grid lines along Y-axis
+for(i=0; i<=num_lines_y; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    
+    // If line represents X-axis draw in different color
+    if(i == y_axis_distance_grid_lines) 
+        ctx.strokeStyle = "#000000";
+    else
+        ctx.strokeStyle = "#dcdcdc";
+
+    if(i == num_lines_y) {
+        ctx.moveTo(grid_size*i, 0);
+        ctx.lineTo(grid_size*i, window.canvas_height);
+    }
+    else {
+        ctx.moveTo(grid_size*i+0.5, 0);
+        ctx.lineTo(grid_size*i+0.5, canvas_height);
+    }
+    
+    ctx.stroke();
+}
+
+// Translate to the new origin. Now Y-axis of the canvas is opposite to the Y-axis of the graph. So the y-coordinate of each element will be negative of the actual
+ctx.translate(y_axis_distance_grid_lines*grid_size, x_axis_distance_grid_lines*grid_size);
+
+// Ticks marks along the positive X-axis
+for(i=1; i<(num_lines_y - y_axis_distance_grid_lines); i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(grid_size*i+0.5, -3);
+    ctx.lineTo(grid_size*i+0.5, 3);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '9px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(x_axis_starting_point.number*i + x_axis_starting_point.suffix, grid_size*i-2, 15);
+}
+
+// Ticks marks along the negative X-axis
+for(i=1; i<y_axis_distance_grid_lines; i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-grid_size*i+0.5, -3);
+    ctx.lineTo(-grid_size*i+0.5, 3);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '9px Arial';
+    ctx.textAlign = 'end';
+    ctx.fillText(-x_axis_starting_point.number*i + x_axis_starting_point.suffix, -grid_size*i+3, 15);
+}
+
+// Ticks marks along the negative Y-axis
+for(i=1; i<( x_axis_distance_grid_lines); i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-3, grid_size*i+0.5);
+    ctx.lineTo(3, grid_size*i+0.5);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '9px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(-y_axis_starting_point.number*i + y_axis_starting_point.suffix, 8, grid_size*i+3);
+}
+
+// Ticks marks along the positive Y-axis
+for(i=1; i<(num_lines_x - x_axis_distance_grid_lines); i++) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "#000000";
+
+    // Draw a tick mark 6px long (-3 to 3)
+    ctx.moveTo(-3, -grid_size*i+0.5);
+    ctx.lineTo(3, -grid_size*i+0.5);
+    ctx.stroke();
+
+    // Text value at that point
+    ctx.font = '9px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText(y_axis_starting_point.number*i + y_axis_starting_point.suffix, 8, -grid_size*i+3);
+    ctx.beginPath();
+    /*ctx.arc(2*grid_size, -4*grid_size, 3, 0, 2 * Math.PI);
+    ctx.fill();*/
+ctx.moveTo(-10*grid_size, 20*grid_size);
+ctx.lineTo(5*grid_size, -10*grid_size);
+
+// Draw the Path
+ctx.stroke();
+    
+}
+
+function plotPoint() {
+    var x = parseFloat(document.getElementById("xInput").value);
+    var y = parseFloat(document.getElementById("yInput").value);
+
+    if(document.getElementById("xInput").value.length==0){
+        alert("Please enter the value of r");
+        return false
+    }
+    if(document.getElementById("yInput").value.length==0){
+        alert("Please enter the value of s");
+        return false
+    }
+    ctx.beginPath();
+    ctx.arc(x*grid_size, -y*grid_size, 3, 0, 2 * Math.PI);
+    
+    ctx.fillStyle = "red";
+    ctx.fill();
+
+    document.getElementById("equation").innerHTML = "<span style='color:blue;'>&emsp;Equation under consideration : T(x) = ("+x+", "+y+")</span><br><br>";
+
+    if(((parseFloat(document.getElementById("xInput").value))*2)==parseFloat(document.getElementById("yInput").value)){
+        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &isin; Range T ";
+        document.getElementById("solutionexist").innerHTML="<span style='font-size:2rem; color:blue;'>&#8658; Solution exists</span>";
+        document.getElementById('constbtn').style.display="";
+        document.getElementById('canvas').style.display="";
+        document.getElementById('solutionexist').style.display="";
+    }
+    else{
+        //document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range T <br><br>&#8658; Solution does not exist";
+        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range T";
+        document.getElementById("solutionexist").innerHTML = "<span style='font-size:2rem; color:blue;'>&#8658; Solution does not exist</span>";
+        document.getElementById('constbtn').style.display="";
+        document.getElementById('canvas').style.display="";
+        document.getElementById('solutionexist').style.display="";
+    }
+        //document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + "";
+
+    document.getElementById("note2").innerHTML = "Note: The red point represents the coordinates entered by the user.";
+}
+
+
+document.getElementById("solutionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var p = parseFloat(document.getElementById("p").value);
+            var q = parseFloat(document.getElementById("q").value);
+            var resultElement = document.getElementById("result");
+
+            if (p === 1) {
+                resultElement.textContent = "Correct solution!";
+                resultElement.style.color ="blue"
+                document.getElementById("ressol").innerHTML = "Reason:&emsp;&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br> &emsp;&emsp;&emsp;&emsp; (p, 2p) = (1, 2);<br> &rArr;  p = 1 and 2p = 2 <br> <br>Solutions : (1, q); q&isin;R";
+            } else {
+                resultElement.textContent = "Incorrect solution.";
+                resultElement.style.color ="red"
+                document.getElementById("ressol").innerHTML = "Reason:&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (p, 2p) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; p = 1</span> <br><br> Solutions : (1, q); q&isin;R";
+            }
+        });
+</script>
+
+</html>
+
+
+
