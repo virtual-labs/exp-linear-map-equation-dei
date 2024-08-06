@@ -2,38 +2,70 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Consider the linear transformation \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y)=(x, 0) \), where \( x, y \in \mathbb{R} \). Then the range of \( T \) is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "\(\mathbb{R}^2\)",
+        "b": "\(\mathbb{R}\)",
+        "c": "x-axis",
+        "d": "y-axis"
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "2. Consider the linear transformation \( T:\mathbb{R}^3 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y, z)=(x, y+z) \), where \( x, y, z \in \mathbb{R} \). Then the range of \( T \) is",
+      "answers": {
+        "a": "\(\mathbb{R}^2\)",
+        "b": "\(\mathbb{R}^3\)",
+        "c": "\(\mathbb{R}^2 - \{0\}\)",
+        "d": "(x, 0)"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. Consider the linear transformation \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y)=(x, -y) \), where \( x, y \in \mathbb{R} \). Then",
+      "answers": {
+        "a": "T is one-to-one and onto",
+        "b": "T is onto, but not one-to-one",
+        "c": "T is neither one-to-one nor onto",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. Consider the linear transformation \( T:\mathbb{R}^3 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y, z)=(x+y+z, 0) \), where \( x, y, z \in \mathbb{R} \). Then",
+      "answers": {
+        "a": "(3, 6, 1) \in \text{Range}(T)",
+        "b": "(0, 0, 0) \in \text{Range}(T)",
+        "c": "(0, 1) \in \text{Range}(T)",
+        "d": "(2, 0) \in \text{Range}(T)"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Consider the map \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^3 \) such that \( T(1, 3)=(1, 0, 0) \), \( T(2, 6)=(2, 0, 0) \), \( T(1, 1)=(0, 1, 0) \) and \( T(2, 4)=(1, 1, 0) \). Then \( T \) is",
+      "answers": {
+        "a": "One-to-one and linear",
+        "b": "One-to-one and not linear",
+        "c": "Linear and not one-to-one",
+        "d": "None of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Consider the map \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) and \( S:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) such that \( T(2, 1)=(1, 1) \), \( T(1, 2)=(1, 1) \), \( S(4, 2)=(3, 3) \) and \( S(8, 4)=(5, 6) \). Let the statements A and B be as given below:\nA: \( T \) is one-to-one.\nB: \( S \) is not linear.\nThen which of the following holds",
+      "answers": {
+        "a": "A is true, B is false",
+        "b": "A is false, B is true",
+        "c": "A is true, B is true",
+        "d": "A is false, B is false"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
