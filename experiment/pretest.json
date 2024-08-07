@@ -1,30 +1,30 @@
 {
   "version": 2.0,
   "questions": [
-    {
-      "question": "1. Consider the linear transformation \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y)=(x, 0) \), where \( x, y \in \mathbb{R} \). Then the range of \( T \) is",
+  {
+      "question": "Consider the linear transformation T: R<sup>2</sup>→R<sup>2</sup> defined by T(x, y)=(x, 0), where x, y∈R. Then range of T is",
       "answers": {
-        "a": "\(\mathbb{R}^2\)",
-        "b": "\(\mathbb{R}\)",
+        "a": "R<sup>2</sup>",
+        "b": "R",
         "c": "x-axis",
         "d": "y-axis"
       },
       "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "2. Consider the linear transformation \( T:\mathbb{R}^3 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y, z)=(x, y+z) \), where \( x, y, z \in \mathbb{R} \). Then the range of \( T \) is",
+      "question": "Consider the linear transformation T: R<sup>3</sup>→R<sup>2</sup> defined by T(x, y, z)=(x, y+z), where x, y, z∈R. Then range of T is",
       "answers": {
-        "a": "\(\mathbb{R}^2\)",
-        "b": "\(\mathbb{R}^3\)",
-        "c": "\(\mathbb{R}^2 - \{0\}\)",
+        "a": "R<sup>2</sup>",
+        "b": "R<sup>3</sup>",
+        "c": "R<sup>2</sup>-{0}",
         "d": "(x, 0)"
       },
       "correctAnswer": "a",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "3. Consider the linear transformation \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y)=(x, -y) \), where \( x, y \in \mathbb{R} \). Then",
+      "question": "Consider the linear transformation T:R<sup>2</sup>→R<sup>2</sup> defined by T(x, y)=(x, -y), where x, y∈R. Then",
       "answers": {
         "a": "T is one-to-one and onto",
         "b": "T is onto, but not one-to-one",
@@ -32,21 +32,21 @@
         "d": "None of the above"
       },
       "correctAnswer": "a",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "4. Consider the linear transformation \( T:\mathbb{R}^3 \rightarrow \mathbb{R}^2 \) defined by \( T(x, y, z)=(x+y+z, 0) \), where \( x, y, z \in \mathbb{R} \). Then",
+      "question": "Consider the linear transformation T:R<sup>3</sup>→R<sup>2</sup> defined by T(x, y, z)=(x+y+z, 0), where x, y, z∈R. Then",
       "answers": {
-        "a": "(3, 6, 1) \in \text{Range}(T)",
-        "b": "(0, 0, 0) \in \text{Range}(T)",
-        "c": "(0, 1) \in \text{Range}(T)",
-        "d": "(2, 0) \in \text{Range}(T)"
+        "a": "(3, 6, 1)∈Range(T)",
+        "b": "(0, 0, 0)∈Range(T)",
+        "c": "(0, 1)∈Range(T)",
+        "d": "(2, 0)∈Range(T)"
       },
       "correctAnswer": "d",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "5. Consider the map \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^3 \) such that \( T(1, 3)=(1, 0, 0) \), \( T(2, 6)=(2, 0, 0) \), \( T(1, 1)=(0, 1, 0) \) and \( T(2, 4)=(1, 1, 0) \). Then \( T \) is",
+      "question": "Consider the map T:R<sup>2</sup>→R<sup>3</sup> such that T(1, 3)=(1, 0, 0), T(2, 6)=(2, 0, 0), T(1, 1)=(0, 1, 0) and T(2, 4)=(1, 1, 0). Then T is",
       "answers": {
         "a": "One-to-one and linear",
         "b": "One-to-one and not linear",
@@ -54,10 +54,10 @@
         "d": "None of the above"
       },
       "correctAnswer": "d",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     },
     {
-      "question": "6. Consider the map \( T:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) and \( S:\mathbb{R}^2 \rightarrow \mathbb{R}^2 \) such that \( T(2, 1)=(1, 1) \), \( T(1, 2)=(1, 1) \), \( S(4, 2)=(3, 3) \) and \( S(8, 4)=(5, 6) \). Let the statements A and B be as given below:\nA: \( T \) is one-to-one.\nB: \( S \) is not linear.\nThen which of the following holds",
+      "question": "Consider the map T:R<sup>2</sup>→R<sup>2</sup> and S:R<sup>2</sup>→R<sup>2</sup> such that T(2, 1)=(1, 1), T(1, 2)=(1, 1), S(4, 2)=(3, 3) and S(8, 4)=(5, 6). Let the statements A and B be as given below:\nA: T is one-to-one.\nB: S is not linear.\nThen which of following holds",
       "answers": {
         "a": "A is true, B is false",
         "b": "A is false, B is true",
@@ -65,7 +65,7 @@
         "d": "A is false, B is false"
       },
       "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "difficulty": "beginner"
     }
   ]
 }
