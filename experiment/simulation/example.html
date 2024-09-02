@@ -45,12 +45,12 @@
         padding: 2rem;
         border-radius: 1.2rem;
         background-color: lightyellow;
-        margin-left: 29%;
-        margin-right: 29%;
+        margin-left: 25%;
+        margin-right: 25%;
         /*background: transparent;
         background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
         box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
-    }
+    } 
     .container:hover{
         border-radius: 0.5rem;
         box-shadow: 0px 3px 15px rgba(133, 115, 119, 1.0);
@@ -179,7 +179,7 @@ input{
         <!-- <button class="subbtn" id="rng"  onclick=" ">Case 1</button> -->
         <p style="font-size: 24px;" ><b>&emsp;Equation 1:</b> T(x) = b, where b = (1, 2)</p>
         
-        <ul style="margin-left:15px;"><p style="font-size: 20px;" ><li> What do you infer? <input id="btn1" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="Inconsistent"></li></p>
+        <ul style="margin-left:15px;"><p style="font-size: 20px;" ><li> What do you infer? <input id="btn1" class="subbtn" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" class="subbtn" value="Inconsistent"></li></p>
         <p id="c5ld" style="font-size: 20px;"></p>
         <p id="c5li" style="font-size: 20px;"></p>
         <form id="solutionForm">
@@ -191,7 +191,7 @@ input{
                 <label for="q">q:</label>
                 <input type="number" id="q" name="q" required>
                 <br>
-                <input type="submit" value="Check Answer" style="margin-left: 390px; margin-top: 20px;">
+                <input type="submit" class="subbtn" value="Check Answer" style="margin-left: 340px; margin-top: 20px;">
             </form>
             <p id="result"></p>
             <p id="ressol" style="font-size: 20px;" ></p></li></ul>
@@ -201,7 +201,7 @@ input{
         <!-- <button class="subbtn" id="rng"  onclick=" ">Case 2</button> -->
         <p style="font-size: 24px;" ><b>&emsp;Equation 2:</b> T(x) = b, where b = (2, 3)</p>
         
-       <ul style="margin-left:15px;"><li><p style="font-size: 24px;" > What do you infer? <input id="btn3" type="submit" onclick="c6ld('btn3'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn4.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn4" type="submit" onclick="c6li('btn4'); this.style.backgroundColor = 'red'; btn3.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="Inconsistent"></li></p> 
+       <ul style="margin-left:15px;"><li><p style="font-size: 24px;" > What do you infer? <input id="btn3" class="subbtn"class="subbtn" type="submit" onclick="c6ld('btn3'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn4.style.backgroundColor = 'lightgrey'; " value="Consistent"> / <input id="btn4" type="submit" onclick="c6li('btn4'); this.style.backgroundColor = 'red'; btn3.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" class="subbtn" value="Inconsistent"></li></p> 
         <p id="c6ld" style="font-size: 20px;"></p>                                             
         <p id="c6li" style="font-size: 20px;"></p></ul>
     </div>
@@ -214,7 +214,7 @@ input{
         <input type="number" id="xInput">
         <label for="yInput">s:</label>
         <input type="number" id="yInput">
-        <button onclick="plotPoint()">Submit</button><br>
+        <button class="subbtn" onclick="plotPoint()">Submit</button><br>
 
    
         <p id="equation"></p> </div>
@@ -266,10 +266,7 @@ function rngfun(){
         document.getElementById('Cle').style.display="";
        
     }
-    function Consistency(){
-        
-       
-    }
+   
 
 </script>
 
@@ -470,7 +467,8 @@ document.getElementById("solutionForm").addEventListener("submit", function(even
             if (p === 1) {
                 resultElement.textContent = "Correct solution!";
                 resultElement.style.color ="blue"
-                document.getElementById("ressol").innerHTML = "Reason:&emsp;&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br> &emsp;&emsp;&emsp;&emsp; (p, 2p) = (1, 2);<br> &rArr;  p = 1 and 2p = 2 <br> <br>Solutions : (1, q); q&isin;R";
+                document.getElementById("ressol").innerHTML = "Reason:&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (p, 2p) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; p = 1</span> <br><br> Solutions : (1, q); q&isin;R";
+            
             } else {
                 resultElement.textContent = "Incorrect solution.";
                 resultElement.style.color ="red"
