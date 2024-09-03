@@ -28,7 +28,7 @@ inconsistent.
 ### 3. Solutions:
 Consider a linear map equation<br>
 T(X)=b ……. (i)<br>
-where T:R n →R m is a linear map and b&isin;R <sup>m</sup> . Note that in
+where T:R<sup>n</sup>→R<sup>m</sup> is a linear map and b&isin;R <sup>m</sup> . Note that in
 particular, if b=0, then the linear map equation (i)
 reduces to<br>
 T(X)=0 ……. (ii)
