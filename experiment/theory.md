@@ -14,7 +14,7 @@ linear map equation T(X)=b, where b=(1, 1, 0). Then
 we get (x+y, x-y, 0)=(1, 1, 0). This implies that
 x+y=1and x-y=1. Thus x=1 and y=0 which means that
 solution of linear map equation exist. That is, linear
-map equation is consistent.
+map equation is consistent.<br>
 (ii) Let T:R<sup>2</sup> →R<sup>3</sup> be the linear transformation defined
 by T(x, y)=(x+y, 2y, 2x), where x, y&isin;R. Consider the
 linear map equation T(X)=b, where b=(1, 4, 0). Then
@@ -43,9 +43,9 @@ Conversely, let X be a solution of (i). Then T(X)=b. Since X= X<sub>o</sub>+(X-X
 (a.) Let solution of (i) exist. Then solution is unique if and only if T is one-to-one by the definition of one-to-one map.<br>
 (b.) Solution of (ii) is unique if and only if T is one-to-one. [Note that solution of (ii) always exists.]
 #### 3.4. Summary:
-(a.) Solution of (i) may or may not exist.
-(b.) Solution of (i) is unique if and only if T is one-to-one, provided solution exists.
-(c.) Solution of (ii) always exists.
+(a.) Solution of (i) may or may not exist.<br>
+(b.) Solution of (i) is unique if and only if T is one-to-one, provided solution exists.<br>
+(c.) Solution of (ii) always exists.<br>
 (d.) Solution of (ii) is unique if and only if T is one-to-one.
 ### 4. Remark:
 #### 4.1. 
