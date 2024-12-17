@@ -12,7 +12,7 @@ X≡( x<sub>1</sub> , x<sub>2</sub> ) or (x, y), where x<sub>1</sub> , x<sub>2</
 T(x, y)=(x+y, x-y, 0), where x, y&isin;R. Consider the
 linear map equation T(X)=b, where b=(1, 1, 0). Then
 we get (x+y, x-y, 0)=(1, 1, 0). This implies that
-x+y=1and x-y=1. Thus x=1 and y=0 which means that
+x+y=1and x-y=1. Thus x=1 and y=0. Clearly T(1, 0)=(1, 1, 0) which means that
 solution of linear map equation exist. That is, linear
 map equation is consistent.<br>
 (ii) Let T:R<sup>2</sup> →R<sup>3</sup> be the linear transformation defined
@@ -20,12 +20,12 @@ by T(x, y)=(x+y, 2y, 2x), where x, y&isin;R. Consider the
 linear map equation T(X)=b, where b=(1, 4, 0). Then
 we get (x+y, 2y, 2x)=(1, 4, 0). This implies that x+y=1,
 2y=4, 2x=0. By solving equations (ii) and (iii) we get,
-y=2 and x=0 which do not satisfy the (i) equation
-x+y=1.This means that solution of linear map equation
+y=2 and x=0 which do not satisfy the equation
+x+y=1, a contradiction. This means that solution of linear map equation
 does not exist. That is, linear map equation is
 inconsistent.
 
-### 3. Solutions:
+### 3. Solution:
 Consider a linear map equation<br>
 T(X)=b ……. (i)<br>
 where T:R<sup>n</sup>→R<sup>m</sup> is a linear map and b&isin;R <sup>m</sup> . Note that in
