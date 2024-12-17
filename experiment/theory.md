@@ -36,12 +36,14 @@ T(X)=0 ……. (ii)
 #### 3.1. Condition for existence: 
 By the definition of range T, linear map equation (i) is consistent if and only if b&isin;Range of T.  However, the linear map equation (ii) is always consistent, since T being linear T(0) =0. 
 #### 3.2. Solution set: 
-Assume that X<sub>o</sub> to be a solution of (i).Then the solution set, i.e. the collection of all solutions of (i) is X<sub>0</sub>+ker(T)≡ {X<sub>o</sub>+a: a&isin;ker(T)}. From 3.1, since 0 is a solution of (ii), ker(T) is its solution set.<br>
-Reason: If a&isin;ker(T), then T(X<sub>o</sub>+a)=T(X<sub>o</sub>)+T(a)=b+0=0, so that X<sub>o</sub>+a is a solution the linear map equation of (i). 
+(a.) Assume that X<sub>o</sub> to be a solution of (i).Then the solution set, i.e. the collection of all solutions of (i) is X<sub>0</sub>+ker(T)≡ {X<sub>o</sub>+a: a&isin;ker(T)}.<br>
+Reason: If a&isin;ker(T), then T(X<sub>o</sub>+a)=T(X<sub>o</sub>)+T(a)=b+0=0, so that X<sub>o</sub>+a is a solution of linear map equation of (i). 
 Conversely, let X be a solution of (i). Then T(X)=b. Since X= X<sub>o</sub>+(X-X<sub>o</sub>) and (X-X<sub>o</sub>)&isin;ker(T),  hence X&isin;X0+ker(T).
+(b.) From 3.1, 0 is a solution of (ii) clearly, ker(T) is its solution set.
+
 #### 3.3 Uniqueness of solution:
 (a.) Let solution of (i) exist. Then solution is unique if and only if T is one-to-one by the definition of one-to-one map.<br>
-(b.) Solution of (ii) is unique if and only if T is one-to-one. [Note that solution of (ii) always exists.]
+(b.) Solution of (ii) is unique if and only if T is one-to-one by the definition. [Note that solution of (ii) always exists.]
 #### 3.4. Summary:
 (a.) Solution of (i) may or may not exist.<br>
 (b.) Solution of (i) is unique if and only if T is one-to-one, provided solution exists.<br>
