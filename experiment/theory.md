@@ -43,7 +43,7 @@ Conversely, let X be a solution of (i). Then T(X)=b. Since X= X<sub>o</sub>+(X-X
 
 #### 3.3 Uniqueness of solution:
 (a.) Let solution of (i) exist. Then solution is unique if and only if T is one-to-one by the definition of one-to-one map.<br>
-(b.) Solution of (ii) is unique if and only if T is one-to-one by the definition. [Note that solution of (ii) always exists.]
+(b.) Solution of (ii) is unique if and only if T is one-to-one by definition. [Note that solution of (ii) always exists.]
 #### 3.4. Summary:
 (a.) Solution of (i) may or may not exist.<br>
 (b.) Solution of (i) is unique if and only if T is one-to-one, provided solution exists.<br>
