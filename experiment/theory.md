@@ -13,7 +13,7 @@ T(x, y)=(x+y, x-y, 0), where x, y&isin;R. Consider the
 linear map equation T(X)=b, where b=(1, 1, 0). Then
 we get (x+y, x-y, 0)=(1, 1, 0). This implies that
 x+y=1and x-y=1. Thus x=1 and y=0. Clearly T(1, 0)=(1, 1, 0) which means that
-solution of linear map equation exist. That is, linear
+solution of linear map equation exists. That is, linear
 map equation is consistent.<br>
 (ii) Let T:R<sup>2</sup> →R<sup>3</sup> be the linear transformation defined
 by T(x, y)=(x+y, 2y, 2x), where x, y&isin;R. Consider the
