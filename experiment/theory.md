@@ -39,7 +39,7 @@ By the definition of range T, linear map equation (i) is consistent if and only 
 (a.) Assume X<sub>o</sub> to be a solution of (i).Then the solution set, i.e. the collection of all solutions of (i) is X<sub>0</sub>+ker(T)≡ {X<sub>o</sub>+a: a&isin;ker(T)}.<br>
 Reason: If a&isin;ker(T), then T(X<sub>o</sub>+a)=T(X<sub>o</sub>)+T(a)=b+0=0, so that X<sub>o</sub>+a is a solution of linear map equation of (i). 
 Conversely, let X be a solution of (i). Then T(X)=b. Since X= X<sub>o</sub>+(X-X<sub>o</sub>) and (X-X<sub>o</sub>)&isin;ker(T),  hence X&isin;X0+ker(T).<br>
-(b.) From 3.1, 0 is a solution of (ii) clearly, ker(T) is its solution set.
+(b.) From 3.1, 0 is a solution of (ii). Clearly ker(T) is its solution set.
 
 #### 3.3 Uniqueness of solution:
 (a.) Let solution of (i) exist. Then solution is unique if and only if T is one-to-one by the definition of one-to-one map.<br>
