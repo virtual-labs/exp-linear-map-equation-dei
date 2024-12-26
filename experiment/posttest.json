@@ -46,7 +46,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y)=(y, 0), where x, y∈R. Let the statements A and B be as given below:\nA: The linear map equation T(X)=(1, 4) is consistent.\nB: The linear map equation T(X)=(4, 0) is consistent.\nThen which of following holds",
+            "question": "Let T:R<sup>2</sup>→R<sup>2</sup> be the linear transformation defined by T(x, y)=(y, 0), where x, y∈R. Let the statements A and B be as given below: \n A: The linear map equation T(X)=(1, 4) is consistent. \n B: The linear map equation T(X)=(4, 0) is consistent.\nThen which of following holds",
             "answers": {
                 "a": "A is true, B is false",
                 "b": "A is false, B is true",

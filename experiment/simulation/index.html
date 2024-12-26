@@ -45,8 +45,8 @@
         padding: 2rem 2rem 2rem 4rem;
         border-radius: 1.2rem;
         background-color: lightyellow;
-        margin-left: 28%;
-        margin-right: 28%;
+        margin-left: 25%;
+        margin-right: 25%;
         /*background: transparent;
         background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
         box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
@@ -141,6 +141,8 @@ input{
         background: none;
         border: none;
         font-size: 1.4rem;
+        border: 1px solid teal;
+        background-color: none;
     }
 /* tablet breakpoint */
 @media (min-width:768px) {
@@ -153,37 +155,42 @@ input{
 <body>
     <h2 class="pagehead">Linear Map Equation</h2>
 <div class="container">
-    <p> <strong style="font-size: 1.4rem;">Given: </strong><ul><li>V, W are finite dimentional vector spaces </li>
+
+    <ul><li>V, W are finite dimentional vector spaces </li>
         <li> T:V&rarr;W is a linear transformation</li>
-        <li>T(x)=b is called lineat map equation</li></ul></p>
-    <img id="mapimg" src="images/imgmap.png" alt="Map"><br>
-    <button class="subbtn2" id="probbtn">To Discuss: </button>
-    <p id="prob"><strong style="font-size: 1.8rem;"></strong><ul style="margin: 0;"><li>Existence</li><li>Uniqueness <br>of solution of the equation T(x) = b</li></ul></p>
+        </ul>
+    <p> <strong style="font-size: 1.6rem; border: 1px solid teal; padding-left: 5px; padding-right: 5px;">Given: </strong><ul><li>Linear map equation T(x)=b, where b &isin; W</li>
+        
+        </ul></p>
+        <!-- <li>T(x)=b is called linear map equation</li> -->
+    <img id="mapimg" src="images/exp7img1.PNG" alt="Map"><br>
+    <button class="subbtn2" id="probbtn" style="font-size: 1.6rem;">To Discuss: </button>
+    <p id="prob"><strong style="font-size: 1.8rem;"></strong><ul style="margin: 0;"><li>Existence</li><li>Uniqueness</li></ul></p>
    
     <!-- <button class="subbtn2" id="probbtn">Given: </button><br>
     <p id="prob"><strong style="font-size: 1.8rem;"></strong>
     <ul><li>V, W are finite dimentional vector spaces </li>
     <li> T:V&rarr;W linear transformation</li>
-    <li>T(x)=b called linear map equation</li></ul></p> -->
+    <li>T(x)=b called lineat map equation</li></ul></p> -->
    
     
    
 
-    <button class="subbtn" id="solbtn"     onclick="solution()">Discussion</button><br><br>
-    <button class="subbtn2" id="exstbtn" style="display: none;"  onclick="exst()">Existence (Consistency):</button><br>
+    <button class="subbtn2" id="solbtn" style="font-size: 1.6rem;"    onclick="solution()">Discussion:</button><br><br>
+    <button class="subbtn" id="exstbtn" style="display: block;"  onclick="exst()">Existence (Consistency):</button><br>
     
-    <p id="exst" style="display: none; margin: 0;"><br>&emsp;Equation T(x) = b is consistent iff b &isin; Range T<br>
+    <p id="exst" style="display: none; margin: 0;">&emsp;Equation T(x) = b is consistent iff b &isin; Range T
         <img id="mapimg" src="images/existence.png" alt="Map"></p>
 
 
-    <button class="subbtn2" id="uniqe" style="display: none;"  onclick="uniqe()">Uniqueness: </button><br>
-    <p id="puniqe" style="display: none;"><strong style="font-size: 1.8rem;"></strong>&emsp;Solution is unique iff T is one-to-one, if solution exists<br>
+    <button class="subbtn" id="uniqe" style="display: block;"  onclick="uniqe()">Uniqueness: </button>
+    <p id="puniqe" style="display: none;"><strong style="font-size: 1.8rem;"></strong>&emsp;Solution of T(x)=b is unique iff T is one-to-one, if solution exists<br>
     <img id="mapimg" src="images/uniqueness.png" alt="Map"></p>
     
         
 </div>
 <p style="float: center; align-content:right;">
-<a href="./example.html" class="next" >Next &raquo;</a></p>
+<a href="./example copy.html" class="next" >Next &raquo;</a></p>
 
 </body>
 <script>
@@ -191,18 +198,18 @@ input{
         document.getElementById('prob').style.display="";
         document.getElementById('solbtn').style.display="";
     }
-    function solution(){
-        document.getElementById('exstbtn').style.display="";
-        document.getElementById('uniqe').style.display="";
-        document.getElementById('exst').style.display="";
-        document.getElementById('puniqe').style.display="";
-    }
-    // function exst(){
+    // function solution(){
+    //     document.getElementById('exstbtn').style.display="";
+    //     document.getElementById('uniqe').style.display="";
     //     document.getElementById('exst').style.display="";
-    // }
-    // function uniqe(){
     //     document.getElementById('puniqe').style.display="";
     // }
+    function exst(){
+        document.getElementById('exst').style.display="";
+    }
+    function uniqe(){
+        document.getElementById('puniqe').style.display="";
+    }
 </script>
 
 </html>

@@ -1,1 +1,1 @@
-To understand consistency and solution set of linear map equations.
+To understand consistency and solutions of linear map equations.

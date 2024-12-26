@@ -57,7 +57,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Consider the map T:R<sup>2</sup>→R<sup>2</sup> and S:R<sup>2</sup>→R<sup>2</sup> such that T(2, 1)=(1, 1), T(1, 2)=(1, 1), S(4, 2)=(3, 3) and S(8, 4)=(5, 6). Let the statements A and B be as given below:\nA: T is one-to-one.\nB: S is not linear.\nThen which of following holds",
+      "question": "Consider the map T:R<sup>2</sup>→R<sup>2</sup> and S:R<sup>2</sup>→R<sup>2</sup> such that T(2, 1)=(1, 1), T(1, 2)=(1, 1), S(4, 2)=(3, 3) and S(8, 4)=(5, 6). Let the statements A and B be as given below: \n A: T is one-to-one. \n B: S is not linear.\nThen which of following holds",
       "answers": {
         "a": "A is true, B is false",
         "b": "A is false, B is true",

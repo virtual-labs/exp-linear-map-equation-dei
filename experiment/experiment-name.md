@@ -1,1 +1,1 @@
-## Linear map equation and its solution.
+## Linear map equation and its solution 
