@@ -21,5 +21,4 @@ In this experiment, mathematical model for plane has been determined which leads
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | A Gurucharan| Student | Physics and Computer Science | Dayalbagh Educational Institute | gurucharan1027@gmail.com
-2 | Yashi Agrawal| Student | Electrical Engineering | Dayalbagh Educational Institute | yashi03902@gmail.com
-3 | Shinu Pachauri | Student | Mathematics | Dayalbagh Educational Institute | shinupachouri520@gmail.com
+2 | Shinu Pachauri | Student | Mathematics | Dayalbagh Educational Institute | shinupachouri520@gmail.com
