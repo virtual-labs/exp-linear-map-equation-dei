@@ -7,6 +7,8 @@ inconsistent. Note that for X&isin;R<sup>n</sup> , X≡(x<sub>1</sub> , x<sub>2<
 and T(X)&isin;R<sup>m</sup> ; where x<sub>1</sub> , x<sub>2</sub> , x<sub>3</sub> , …, x<sub>n</sub> &isin;R. For n=2,
 X≡( x<sub>1</sub> , x<sub>2</sub> ) or (x, y), where x<sub>1</sub> , x<sub>2</sub> , x, y&isin;R.
 
+![Linear map equation](images/exp7image2.PNG "Linear map equation")<br>
+
 ### 2. Examples:
 (i) Let T:R<sup>2</sup> →R<sup>3</sup> be the linear transformation defined by
 T(x, y)=(x+y, x-y, 0), where x, y&isin;R. Consider the
@@ -35,15 +37,18 @@ T(X)=0 ……. (ii)
 
 #### 3.1. Condition for existence: 
 By the definition of range T, linear map equation (i) is consistent if and only if b&isin;Range of T.  However, the linear map equation (ii) is always consistent, since T being linear T(0) =0. 
+
+![Condition for existence](images/exp7image3.PNG "Condition for existence")<br>
+
 #### 3.2. Solution set: 
 (a.) Assume X<sub>o</sub> to be a solution of (i).Then the solution set, i.e. the collection of all solutions of (i) is X<sub>0</sub>+ker(T)≡ {X<sub>o</sub>+a: a&isin;ker(T)}.<br>
 Reason: If a&isin;ker(T), then T(X<sub>o</sub>+a)=T(X<sub>o</sub>)+T(a)=b+0=0, so that X<sub>o</sub>+a is a solution of linear map equation of (i). 
 Conversely, let X be a solution of (i). Then T(X)=b. Since X= X<sub>o</sub>+(X-X<sub>o</sub>) and (X-X<sub>o</sub>)&isin;ker(T),  hence X&isin;X0+ker(T).<br>
 (b.) From 3.1, 0 is a solution of (ii). Clearly ker(T) is its solution set.
-
 #### 3.3 Uniqueness of solution:
 (a.) Let solution of (i) exist. Then solution is unique if and only if T is one-to-one by the definition of one-to-one map.<br>
 (b.) Solution of (ii) is unique if and only if T is one-to-one by definition. [Note that solution of (ii) always exists.]
+![Uniqueness of solution](images/exp7image4.PNG "Uniqueness of solution")<br>
 #### 3.4. Summary:
 (a.) Solution of (i) may or may not exist.<br>
 (b.) Solution of (i) is unique if and only if T is one-to-one, provided solution exists.<br>
