@@ -45,8 +45,8 @@
         padding: 2rem 2rem 2rem 4rem;
         border-radius: 1.2rem;
         background-color: lightyellow;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
         /*background: transparent;
         background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
         box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
@@ -119,18 +119,34 @@ input{
 .responsive-two-column-grid > * {
     padding:1rem;
 }
-
+ 
 
 .subbtn{
         height:auto;
         width:auto;
         background-color:#81cdc6;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 600;
         border: 1px solid teal;
         margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+        cursor:pointer;
     }
+
+    .subbtn1{
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+        cursor:pointer;
+    }
+    
+
+
     
 .subbtn2{
         height:auto;
@@ -141,6 +157,48 @@ input{
         background: none;
         border: none;
         font-size: 1.4rem;
+        border: 1px solid teal;
+        background-color: none;
+    }
+.heading0{
+         height:auto;
+        width:auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 1rem;
+        background-color:#6bd88c;
+        border: none;
+        width: 20%;
+        font-size: 1.7rem;
+        border: 1px solid teal;
+        background-color: none;
+    }
+    .heading{
+         height:auto;
+        width:auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 1rem;
+        background-color:#6bd88c;
+        border: none;
+        width: 67%;
+        font-size: 1.7rem;
+        border: 1px solid teal;
+        background-color: none;
+    }
+    .heading2{
+         height:auto;
+        width:auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        margin: 0;
+        padding-left: 1rem;
+        background-color:#6bd88c;
+        border: none;
+        width: 81%;
+        font-size: 1.7rem;
         border: 1px solid teal;
         background-color: none;
     }
@@ -156,16 +214,21 @@ input{
     <h2 class="pagehead">Linear Map Equation</h2>
 <div class="container">
 
-    <ul><li>V, W are finite dimentional vector spaces </li>
+    <!-- <ul><li>V, W are finite dimentional vector spaces </li>
         <li> T:V&rarr;W is a linear transformation</li>
+        </ul> -->
+
+        <p class="heading0"> Notation: </p>
+    <p> <ul style="font-size: 19px;"><li>Linear map equation: T(x)=b</li>
+        <ul><li>V, W are finite dimensional vector spaces </li>
+        <li> T:V&rarr;W is a linear transformation</li>
+        <li> b &isin; W</li>
         </ul>
-    <p> <strong style="font-size: 1.6rem; border: 1px solid teal; padding-left: 5px; padding-right: 5px;">Given: </strong><ul><li>Linear map equation T(x)=b, where b &isin; W</li>
-        
         </ul></p>
         <!-- <li>T(x)=b is called linear map equation</li> -->
-    <img id="mapimg" src="images/exp7img1.png" alt="Map"><br>
-    <button class="subbtn2" id="probbtn" style="font-size: 1.6rem;">To Discuss: </button>
-    <p id="prob"><strong style="font-size: 1.8rem;"></strong><ul style="margin: 0;"><li>Existence</li><li>Uniqueness</li></ul></p>
+    <!-- <img id="mapimg" src="images/exp7img1.png" alt="Map"><br> -->
+    <!-- <button class="subbtn2" id="probbtn" style="font-size: 1.6rem;">To Discuss: </button> -->
+    <!-- <p id="prob"><strong style="font-size: 1.8rem;"></strong><ul style="margin: 0;"><li>Existence</li><li>Uniqueness</li></ul></p> -->
    
     <!-- <button class="subbtn2" id="probbtn">Given: </button><br>
     <p id="prob"><strong style="font-size: 1.8rem;"></strong>
@@ -176,17 +239,87 @@ input{
     
    
 
-    <button class="subbtn2" id="solbtn" style="font-size: 1.6rem;"    onclick="solution()">Discussion:</button><br><br>
-    <button class="subbtn" id="exstbtn" style="display: block;"  onclick="exst()">Existence (Consistency):</button><br>
+    <!-- <button class="subbtn2" id="solbtn" style="font-size: 1.6rem;"    onclick="solution()">Discussion:</button><br><br> -->
+    <p class="heading"> Consistency (Existence of solution): </p><br>
+  <img id="mapimg" src="images/existence.png" alt="Map">
+    <div id="exst">
+<p> <ul style="font-size: 19px;"><li> T(x) = b is consistent if 
+    <select id="if1">
+      <option value="">--Select--</option>
+      <option value="range">b ∈ Range(T)</option>
+      <option value="zero">b = 0</option>
+      <option value="notin">b ∉ Range(T)</option>
+      <option value="ne">b &ne; 0</option>
+      <option value="onto">T is onto</option>
+      <option value="One-to-One">T is one-to-one</option>
+      
+    </select> 
+    or 
+    <select id="if2">
+      <option value="">--Select--</option>
+      <option value="range">b ∈ Range(T)</option>
+      <option value="zero">b = 0</option>
+      <option value="notin">b ∉ Range(T)</option>
+      <option value="ne">b &ne; 0</option>
+      <option value="onto">T is onto</option>
+      <option value="One-to-One">T is one-to-one</option>
+    </select>
+     or 
+    <select id="if3">
+      <option value="">--Select--</option>
+      <option value="range">b ∈ Range(T)</option>
+      <option value="zero">b = 0</option>
+      <option value="notin">b ∉ Range(T)</option>
+      <option value="ne">b &ne; 0</option>
+      <option value="onto">T is onto</option>
+      <option value="One-to-One">T is one-to-one</option>
+    </select>
+    <br>
+    <button class="subbtn1" onclick="checkAnswer()">Submit</button>
+      <p id="result"></p>
+    </li>
+    <li >T(x) = b is consistent iff 
+    <select id="iff">
+      <option value="">--Select--</option>
+      <option value="range">b ∈ Range(T)</option>
+      <option value="zero">b = 0</option>
+      <option value="notin">b ∉ Range(T)</option>
+      <option value="onto">T is onto</option>
+    </select>
+    <br>
+    <button class="subbtn1" onclick="checkAnswer1()">Submit</button>
+  <p id="result1"></p>
+  </li></ul>
+  </p>
+</div>
     
-    <p id="exst" style="display: none; margin: 0;">&emsp;Equation T(x) = b is consistent iff b &isin; Range T
-        <img id="mapimg" src="images/existence.png" alt="Map"></p>
+        
 
 
-    <button class="subbtn" id="uniqe" style="display: block;"  onclick="uniqe()">Uniqueness: </button>
-    <p id="puniqe" style="display: none;"><strong style="font-size: 1.8rem;"></strong>&emsp;Solution of T(x)=b is unique iff T is one-to-one, if solution exists<br>
-    <img id="mapimg" src="images/uniqueness.png" alt="Map"></p>
+    <p class="heading2">Uniqueness of solution (if the solution exists):</p>
+     <img id="mapimg" src="images/uniqueness.png" alt="Map">
+    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let T(x) = b be consistent. Then its solution is uniqe iff 
     
+        <select id="q2">
+      <option value="">--Select an option--</option>
+      <option value="injective">T is one-to-one</option>
+       <option value="notinjective">T is onto</option>
+      <option value="surjective">T is one-to-one and onto</option>
+      <option value="zero">T is zero transformation</option>
+     
+    </select>
+    <br>
+<button class="subbtn1" onclick="checkAnswer2()">Submit</button>
+  <p id="result2"></p>
+    </li></ul>
+    
+
+    
+  </p>
+
+  
+
+
         
 </div>
 <p style="float: center; align-content:right;">
@@ -210,6 +343,77 @@ input{
     function uniqe(){
         document.getElementById('puniqe').style.display="";
     }
+
+
+    function checkAnswer() {
+  const ans1 = document.getElementById("if1").value;
+  const ans2 = document.getElementById("if2").value;
+  const ans3 = document.getElementById("if3").value;
+
+  const resultEl = document.getElementById("result");
+
+  if (ans1 === "" || ans2 === "" || ans3 === "") {
+    resultEl.textContent = "⚠️ Please select all options.";
+    resultEl.style.color = "orange";
+    return;
+  }
+
+  // Collect and sort user answers
+  const userAnswers = [ans1, ans2, ans3].sort();
+  // Correct answers (order-independent)
+  const correctAnswers = ["range", "onto", "zero"].sort();
+
+  // Compare arrays
+  const isCorrect = JSON.stringify(userAnswers) === JSON.stringify(correctAnswers);
+
+  if (isCorrect) {
+    resultEl.innerHTML = "<span style='color:black'>Answer:</span> ✅ Correct!";
+    resultEl.style.color = "green";
+  } else {
+    resultEl.innerHTML =
+      "<span style='color:black'>Answer:</span> ❌ Incorrect. <br> T(x) = b is consistent if b &isin; Range(T) or T is onto or b = 0.";
+    resultEl.style.color = "red";
+  }
+}
+
+    function checkAnswer1() {
+      
+      const ans3 = document.getElementById("iff").value;
+      const resultEl = document.getElementById("result1");
+
+      if (ans3 === "") {
+        resultEl.textContent = "⚠️ Please select the answer.";
+        resultEl.style.color = "orange";
+      }
+      else if (ans3 === "range") {
+        resultEl.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct!";
+        resultEl.style.color = "green";
+      } 
+      else {
+        resultEl.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> T(x) = b is consistent iff b &isin; Range R(T).";
+        resultEl.style.color = "red";
+      }
+    }
+ 
+
+
+    function checkAnswer2() {
+      const ans = document.getElementById("q2").value;
+      const result = document.getElementById("result2");
+
+      if (ans === "injective") {
+        result.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct! <br> Solution is unique iff T is one-to-one.";
+        result.style.color = "green";
+      } else if (ans === "") {
+        result.textContent = "⚠️ Please select an option.";
+        result.style.color = "orange";
+      } else {
+        result.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> Solution is unique iff T is one-to-one.";
+        result.style.color = "red";
+      }
+    }
+
 </script>
+
 
 </html>

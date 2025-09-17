@@ -1,3 +1,4 @@
+This experiment deals with the study of a linear map equation and its consistency. If it is consistent, the question whether solution is unique or not will be explored. Various examples are given to understand the concepts. The present study helps in developing a deeper understanding of consistency of a system of linear equations and its solution set.
 ### 1. Linear map equation:
 Let T:R<sup>n</sup>→R<sup>m</sup> be a linear transformation and b&isin;R<sup>m</sup> . Then equation T(X)=b is called a linear map equation.
 The linear map equation T(X)=b is called consistent if it
