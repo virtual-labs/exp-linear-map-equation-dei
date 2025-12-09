@@ -179,7 +179,7 @@ input{
     <!-- <button class="subbtn" id="rng"  onclick="">Range T </button><br> -->
     <div class="container2">
         <div class="text" style="margin-left: 15px;">
-            <p>T:R<sup>2</sup>&rarr;R<sup>2</sup><br>T(a, d) = (a, 2a); (a, d) &isin; R<sup>2</sup></p>
+            <p><i>T:R</i><sup>2</sup>&rarr;<i>R</i><sup>2</sup><br><i>T</i>(<i>a, d</i>) = (<i>a</i>, 2<i>a</i>); (<i>a, d</i>) &isin; <i>R</i><sup>2</sup></p>
         </div>
         <div class="image">
             <img src="images/range.png" id="rngimg" alt="RangeT">
@@ -189,7 +189,7 @@ input{
    
     <div class="case5">
         <!-- <button class="subbtn" id="rng"  onclick=" ">Case 1</button> -->
-        <p style="font-size: 24px;" ><b>&emsp;Example 1:</b> T(x) = b, where b = (1, 2)</p>
+        <p style="font-size: 24px;" ><b>&emsp;Example 1:</b> <i>T</i>(<i>x</i>) = <i>b</i>, where <i>b</i> = (1, 2)</p>
         
         <ul style="margin-left:15px;"><p style="font-size: 20px;" ><b>1.1</b> What do you infer? <input id="btn1" class="subbtn2" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="Consistent">
              / 
@@ -213,7 +213,7 @@ input{
     </div>
     <div class="case5">
         <!-- <button class="subbtn" id="rng"  onclick=" ">Case 2</button> -->
-        <p style="font-size: 24px;" ><b>&emsp;Example 2:</b> T(x) = b, where b = (2, 3)</p>
+        <p style="font-size: 24px;" ><b>&emsp;Example 2:</b> <i>T</i>(<i>x</i>) = <i>b</i>, where <i>b</i> = (2, 3)</p>
         
        <ul style="margin-left:15px;">
         <p style="font-size: 20px;" ><b>2.1</b> What do you infer? 
@@ -227,10 +227,10 @@ input{
 
     <p style="font-size: 24px;" ><b>&emsp;More Examples (Construction of more equations):</b></p>
         <div id="Cle">
-     <p>&emsp;Choose b = (r, s) by entering values of r and s</p>
-        <label for="xInput">&emsp;r:</label>
+     <p>&emsp;Choose <i>b</i> = (<i>r, s</i>) by entering values of <i>r</i> and <i>s</i></p>
+        <label for="xInput">&emsp;<i>r</i>:</label>
         <input type="number" id="xInput" min="-4" max="14">
-        <label for="yInput">s:</label>
+        <label for="yInput"><i>s</i>:</label>
         <input type="number" id="yInput" min="-9" max="9">
         <button class="subbtn2" onclick="plotPoint()">Submit</button><br>
 
@@ -260,21 +260,21 @@ input{
 <script>
 
 function c5ld(){
-       document.getElementById('c5ld').innerHTML='<span style="color:Green";><span style="color:black"> Answer:</span>Correct! Equation is consistent.</span><br><br> Reason: b &equiv; (1, 2) = T(1, 4) &rArr; b &isin; Range T &rArr; Consistent  ';
+       document.getElementById('c5ld').innerHTML='<span style="color:Green";><span style="color:black"> Answer: ✅</span> Correct! Equation is consistent.</span><br><br> Reason: <i>b</i> &equiv; (1, 2) = <i>T</i>(1, 4) &rArr; <i>b</i> &isin; Range <i>T</i> &rArr; Consistent  ';
        document.getElementById('c5li').innerHTML='';
        document.getElementById('solutionForm').style.display="";
    }
    function c5li(){
-       document.getElementById('c5li').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span> Incorrect! Equation is consistent.</span><br><br> Reason: b &equiv; (1, 2) = T(1, 4) &rArr; b &isin; Range T &rArr; Consistent  ';
+       document.getElementById('c5li').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span>❌ Incorrect! Equation is consistent.</span><br><br> Reason: <i>b</i> &equiv; (1, 2) = <i>T</i>(1, 4) &rArr; <i>b</i> &isin; Range <i>T</i> &rArr; Consistent  ';
        document.getElementById('c5ld').innerHTML='';
        document.getElementById('solutionForm').style.display="";
    }
    function c6ld(){
-       document.getElementById('c6ld').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span> Incorrect! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range T <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = T(p, q) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (p, 2p) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  p = 2 and 2p = 3, a contradiction';
+       document.getElementById('c6ld').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span>❌ Incorrect! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
        document.getElementById('c6li').innerHTML='';
    }
    function c6li(){
-       document.getElementById('c6li').innerHTML='<span style="color:Green";><span style="color:black"> Answer:</span>Correct! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range T <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = T(p, q) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (p, 2p) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  p = 2 and 2p = 3, a contradiction';
+       document.getElementById('c6li').innerHTML='<span style="color:Green";><span style="color:black"> Answer: ✅ </span>Correct! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
        document.getElementById('c6ld').innerHTML='';
    }
 
@@ -463,19 +463,19 @@ function plotPoint() {
 
     document.getElementById("equation").innerHTML = 
   "<span style='color:blue;'>&emsp;Equation under consideration :</span> " +
-  "<span style='color:red;'>T(x) = ("+x+", "+y+")</span><br><br>";
+  "<span style='color:red;'><i>T</i>(<i>x</i>) = ("+x+", "+y+")</span><br><br>";
 
 
     if(((parseFloat(document.getElementById("xInput").value))*2)==parseFloat(document.getElementById("yInput").value)){
-        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &isin; Range T ";
+        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &isin; Range <i>T</i> ";
         document.getElementById("solutionexist").innerHTML="<span style='color:blue;'>&#8658; Solution exists</span>";
         document.getElementById('constbtn').style.display="";
         document.getElementById('canvas').style.display="";
         document.getElementById('solutionexist').style.display="";
     }
     else{
-        //document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range T <br><br>&#8658; Solution does not exist";
-        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range T";
+        //document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range <i>T</i> <br><br>&#8658; Solution does not exist";
+        document.getElementById("printpoint1cords").innerHTML = "(" + x + ", " + y + ") &notin; Range <i>T</i>";
         document.getElementById("solutionexist").innerHTML = "<span style='color:blue;'>&#8658; Solution does not exist</span>";
         document.getElementById('constbtn').style.display="";
         document.getElementById('canvas').style.display="";
@@ -496,12 +496,12 @@ document.getElementById("solutionForm").addEventListener("submit", function(even
             if (p === 1) {
                 resultElement.innerHTML = "<span style='color:black'> Answer: </span>Correct solution!";
                 resultElement.style.color ="Green"
-                document.getElementById("ressol").innerHTML = "Reason:&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (p, 2p) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; p = 1</span> <br><br> Solutions : (1, q), q&isin;R";
+                document.getElementById("ressol").innerHTML = "Reason:&emsp;(<i>p, q</i>) is a solution if <i>T</i>(<i>p, q</i>) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (<i>p</i>, 2<i>p</i>) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; <i>p</i> = 1</span> <br><br> Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
             
             } else {
                 resultElement.innerHTML = "<span style='color:black'>Answer: </span>Incorrect solution!";
                 resultElement.style.color ="red"
-                document.getElementById("ressol").innerHTML = "Reason:&emsp;(p, q) is a solution if T(p, q) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (p, 2p) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; p = 1</span> <br><br> Solutions : (1, q), q&isin;R";
+                document.getElementById("ressol").innerHTML = "Reason:&emsp;(<i>p, q</i>) is a solution if <i>T</i>(<i>p, q</i>) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (<i>p</i>, 2<i>p</i>) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; <i>p</i> = 1</span> <br><br> Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
             }
         });
 </script>

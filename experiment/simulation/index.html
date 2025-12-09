@@ -219,10 +219,10 @@ input{
         </ul> -->
 
         <p class="heading0"> Notation: </p>
-    <p> <ul style="font-size: 19px;"><li>Linear map equation: T(x)=b</li>
-        <ul><li>V, W are finite dimensional vector spaces </li>
-        <li> T:V&rarr;W is a linear transformation</li>
-        <li> b &isin; W</li>
+    <p> <ul style="font-size: 19px;"><li>Linear map equation: <i>T</i>(<i>x</i>)=<i>b</i></li>
+        <ul><li><i>V, W</i> are finite dimensional vector spaces </li>
+        <li> <i>T:V</i>&rarr;<i>W</i> is a linear transformation</li>
+        <li> <i>b</i> &isin; <i>W</i></li>
         </ul>
         </ul></p>
         <!-- <li>T(x)=b is called linear map equation</li> -->
@@ -243,48 +243,48 @@ input{
     <p class="heading"> Consistency (Existence of solution): </p><br>
   <img id="mapimg" src="images/existence.png" alt="Map">
     <div id="exst">
-<p> <ul style="font-size: 19px;"><li> T(x) = b is consistent if 
+<p> <ul style="font-size: 19px;"><li> <i>T</i>(<i>x</i>) = <i>b</i> is consistent if 
     <select id="if1">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
       
     </select> 
     or 
     <select id="if2">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
     </select>
      or 
     <select id="if3">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
     </select>
     <br>
     <button class="subbtn1" onclick="checkAnswer()">Submit</button>
       <p id="result"></p>
     </li>
-    <li >T(x) = b is consistent iff 
+    <li ><i>T</i>(<i>x</i>) = <i>b</i> is consistent iff 
     <select id="iff">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="onto">T is onto</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="onto">𝑇 is onto</option>
     </select>
     <br>
     <button class="subbtn1" onclick="checkAnswer1()">Submit</button>
@@ -298,14 +298,14 @@ input{
 
     <p class="heading2">Uniqueness of solution (if the solution exists):</p>
      <img id="mapimg" src="images/uniqueness.png" alt="Map">
-    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let T(x) = b be consistent. Then its solution is uniqe iff 
+    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let <i>T</i>(<i>x</i>) = <i>b</i> be consistent. Then its solution is uniqe iff 
     
         <select id="q2">
-      <option value="">--Select an option--</option>
-      <option value="injective">T is one-to-one</option>
-       <option value="notinjective">T is onto</option>
-      <option value="surjective">T is one-to-one and onto</option>
-      <option value="zero">T is zero transformation</option>
+      <option value="injective">𝑇 is one-to-one</option>
+      <option value="notinjective">𝑇 is onto</option>
+      <option value="surjective">𝑇 is one-to-one and onto</option>
+      <option value="zero">𝑇 is zero transformation</option>
+
      
     </select>
     <br>
@@ -371,7 +371,7 @@ input{
     resultEl.style.color = "green";
   } else {
     resultEl.innerHTML =
-      "<span style='color:black'>Answer:</span> ❌ Incorrect. <br> T(x) = b is consistent if b &isin; Range(T) or T is onto or b = 0.";
+      "<span style='color:black'>Answer:</span> ❌ Incorrect. Correct Answer: <i>b</i> &isin; Range(<i>T</i>) or <i>T</i> is onto or <i>b</i> = 0.";
     resultEl.style.color = "red";
   }
 }
@@ -390,7 +390,7 @@ input{
         resultEl.style.color = "green";
       } 
       else {
-        resultEl.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> T(x) = b is consistent iff b &isin; Range R(T).";
+        resultEl.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. Correct Answer: <i>b</i> &isin; Range(<i>T</i>).";
         resultEl.style.color = "red";
       }
     }
@@ -402,13 +402,13 @@ input{
       const result = document.getElementById("result2");
 
       if (ans === "injective") {
-        result.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct! <br> Solution is unique iff T is one-to-one.";
+        result.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct!";
         result.style.color = "green";
       } else if (ans === "") {
         result.textContent = "⚠️ Please select an option.";
         result.style.color = "orange";
       } else {
-        result.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> Solution is unique iff T is one-to-one.";
+        result.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. Correct Answer: <i>T</i> is one-to-one.";
         result.style.color = "red";
       }
     }
