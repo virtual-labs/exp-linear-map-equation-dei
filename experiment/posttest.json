@@ -12,6 +12,15 @@
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Inorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
         {
             "question": "Let $T:R$<sup>3</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y, z)=(x, y+z),$ where $x, y, z∈R$. Consider the linear map equation $T(X)=b$, where $b=(1, 0)$. Then",
             "answers": {
@@ -23,6 +32,15 @@
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
+        "explanations": {
+        "a": "Inorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
         {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>3</sup> be the linear transformation defined by $T(x, y)=(x, x+y, x-y)$, where $x, y∈R$. Consider the linear map equation $T(X)=b$, where $b=(1, 0, 0)$. Then",
             "answers": {
@@ -34,6 +52,15 @@
             "correctAnswer": "d",
             "difficulty": "beginner"
         },
+        "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Inorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Correct. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
         {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y)=(3x, 4x)$, where $x, y∈R$ and let $b=(3, 4)$. Then which of following is a solution of the linear map equation $T(X)=b$",
             "answers": {
@@ -45,6 +72,15 @@
             "correctAnswer": "c",
             "difficulty": "beginner"
         },
+        "explanations": {
+        "a": "Inorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
         {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y)=(y, 0)$, where $x, y∈R$. Let the statements $A$ and $B$ be as given below: \n $A$: The linear map equation $T(X)=(1, 4)$ is consistent. \n $B$: The linear map equation $T(X)=(4, 0)$ is consistent.\n Then which of following holds",
             "answers": {
@@ -56,5 +92,14 @@
             "correctAnswer": "b",
             "difficulty": "beginner"
         }
+        "explanations": {
+        "a": "Inorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
     ]
 }
