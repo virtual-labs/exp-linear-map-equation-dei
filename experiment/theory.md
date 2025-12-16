@@ -1,12 +1,12 @@
 This experiment deals with the study of a linear map equation and its consistency. If it is consistent, the question whether solution is unique or not will be explored. Various examples are given to understand the concepts. The present study helps in developing a deeper understanding of consistency of a system of linear equations and its solution set.
 ### 1. Linear map equation:
-Let T:R<sup>n</sup>→R<sup>m</sup> be a linear transformation and b&isin;R<sup>m</sup> . Then equation T(X)=b is called a linear map equation.
-The linear map equation T(X)=b is called consistent if it
-has a solution, i.e. if there exists X&isin;R<sup>n</sup> such that
-T(X)=b. If it is not consistent, then it is called
-inconsistent. Note that for X&isin;R<sup>n</sup> , X≡(x<sub>1</sub> , x<sub>2</sub> , x<sub>3</sub> , …, x<sub>n</sub> )
-and T(X)&isin;R<sup>m</sup> ; where x<sub>1</sub> , x<sub>2</sub> , x<sub>3</sub> , …, x<sub>n</sub> &isin;R. For n=2,
-X≡( x<sub>1</sub> , x<sub>2</sub> ) or (x, y), where x<sub>1</sub> , x<sub>2</sub> , x, y&isin;R.
+Let <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> be a linear transformation and <i>b</i>&isin;<i>R</i><sup><i>m</i></sup>. Then equation <i>T</i>(<i>X</i>)=<i>b</i> is called a linear map equation.
+The linear map equation <i>T</i>(<i>X</i>)=<i>b</i> is called consistent if it
+has a solution, i.e. if there exists <i>X</i>&isin;<i>R</i><sup><i>n</i></sup> such that
+<i>T</i>(<i>X</i>)=<i>b</i>. If it is not consistent, then it is called
+inconsistent. Note that for <i>X</i>&isin;<i>R</i><sup><i>n</i></sup>, <i>X</i>≡(<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, …, <i>x</i><sub><i>n</i></sub> )
+and <i>T</i>(<i>X</i>)&isin;<i>R</i><sup><i>m</i></sup>; where <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, …, <i>x</i><sub><i>n</i></sub> &isin;<i>R</i>. For <i>n</i>=2,
+<i>X</i>≡( <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub> ) or (<i>x, y</i>), where <i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x, y</i>&isin;<i>R</i>.
 
 ![Linear map equation](images/exp7image2.PNG "Linear map equation")<br>
 
