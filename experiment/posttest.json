@@ -21,14 +21,14 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-        {
+    {
             "question": "Let $T:R$<sup>3</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y, z)=(x, y+z),$ where $x, y, z∈R$. Consider the linear map equation $T(X)=b$, where $b=(1, 0)$. Then",
             "answers": {
                 "a": "Solution exists and there are infinitely many solutions",
                 "b": "Solution exists and there are finite but more than one solutions",
                 "c": "Unique solution",
                 "d": "System is inconsistent"
-            },
+        },
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
@@ -41,7 +41,7 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-        {
+    {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>3</sup> be the linear transformation defined by $T(x, y)=(x, x+y, x-y)$, where $x, y∈R$. Consider the linear map equation $T(X)=b$, where $b=(1, 0, 0)$. Then",
             "answers": {
                 "a": "Solution exists and there are infinitely many solutions",
@@ -61,7 +61,7 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-        {
+    {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y)=(3x, 4x)$, where $x, y∈R$ and let $b=(3, 4)$. Then which of following is a solution of the linear map equation $T(X)=b$",
             "answers": {
                 "a": "$x=0, y=0$",
@@ -81,7 +81,7 @@
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
-        {
+    {
             "question": "Let $T:R$<sup>2</sup>→$R$<sup>2</sup> be the linear transformation defined by $T(x, y)=(y, 0)$, where $x, y∈R$. Let the statements $A$ and $B$ be as given below: \n $A$: The linear map equation $T(X)=(1, 4)$ is consistent. \n $B$: The linear map equation $T(X)=(4, 0)$ is consistent.\n Then which of following holds",
             "answers": {
                 "a": "$A$ is true, $B$ is false",
@@ -100,6 +100,6 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
-    },
+    }
     ]
 }
