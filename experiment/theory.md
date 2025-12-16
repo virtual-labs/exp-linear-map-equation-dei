@@ -34,7 +34,7 @@ Consider a linear map equation<br>
 where <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a linear map and <i>b</i>&isin;<i>R</i> <sup><i>m</i></sup>. Note that in
 particular, if <i>b</i>=0, then the linear map equation (<i>i</i>)
 reduces to<br>
-<i>T</i>(<i>X</i>)=0 ……. (<i>ii<i>)
+<i>T</i>(<i>X</i>)=0 ……. (<i>ii</i>)
 
 #### 3.1. Condition for existence: 
 By the definition of range <i>T</i>, linear map equation (<i>i</i>) is consistent if and only if <i>b</i>&isin;Range of <i>T</i>.  However, the linear map equation (<i>ii</i>) is always consistent, since <i>T</i> being linear <i>T</i>(0) =0. 
