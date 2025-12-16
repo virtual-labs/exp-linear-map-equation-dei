@@ -10,7 +10,7 @@ and <i>T</i>(<i>X</i>)&isin;<i>R</i><sup><i>m</i></sup>; where <i>x</i><sub>1</s
 
 ![Linear map equation](images/exp7image2.PNG "Linear map equation")<br>
 
-### 2. Examples:
+### 2. Example:
 (i) Let <i>T</i>:<i>R</i><sup>2</sup> →<i>R</i><sup>3</sup> be the linear transformation defined by
 <i>T</i>(<i>x, y</i>)=(<i>x+y, x-y</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Consider the
 linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 1, 0). Then
@@ -60,6 +60,6 @@ Conversely, let <i>X</i> be a solution of (<i>i</i>). Then <i>T</i>(<i>X</i>)=<i
 If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of (<i>i</i>) or (<i>ii</i>) exist, in general [this is shown in the example 5(ii) below]. 
 #### 4.2. 
 If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup>  is a one-to-one linear transformation and <i>n</i>=<i>m</i>, then <i>T</i> is onto and hence solution of (<i>i</i>) exists. Further, <i>T</i> being one-to-one solution is unique.
-### 5. Examples:
+### 5. Example:
 (i) Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> be the linear transformation defined by <i>T</i>(<i>x, y</i>)=(<i>y, x</i>), where <i>x, y</i>&isin;<i>R</i>. Consider the linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 4). Then solution of linear map equation exists because b&isin;Range of <i>T</i>. Further the solution is unique, since <i>T</i> is one-to-one.<br>
 (ii) Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>3</sup> be the linear transformation defined by <i>T</i>(<i>x, y</i>)=(<i>x</i>-<i>y</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Consider the linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 4, 1). Notice that this linear map equation is not consistent and <i>T</i> is one-to-one. This shows that solution of linear map equation may not exist even if <i>T</i> is one-to-one.
