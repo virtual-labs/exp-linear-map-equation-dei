@@ -3,288 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-     <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-     <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
-
-
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script src="js/js1.js"></script>
 </head>
-<style>
-    body{
-        width: 100%;
-        height: 100vh;
-        /*display: flex;*/
-        justify-content: center;
-        align-items: center;
-        /*background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
-        background-color: whitesmoke;
-        font-size: 1.5rem;
-    }
-    .pagehead{
-      display: block;
-      text-align: center;
-      border-top: 2px solid lightseagreen;
-      background: linear-gradient(yellow, lightseagreen);
-      padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-      float:center;
-      margin: 0.5rem;
-      font-size: 32px;
-    }
-    .container{
-        /*border: 1px solid #717377;*/
-        padding: 2rem 2rem 2rem 4rem;
-        border-radius: 1.2rem;
-        background-color: lightyellow;
-        margin-left: 20%;
-        margin-right: 20%;
-        /*background: transparent;
-        background: linear-gradient(45deg, #0a0a0a, #3a4452);*/
-        box-shadow: 0px 3px 15px rgba(133, 115, 119, 0.5);
-    }
-    .container:hover{
-        border-radius: 0.5rem;
-        box-shadow: 0px 3px 15px rgba(133, 115, 119, 1.0);
-    }
-    #mapimg{
-        width: 30rem;
-        height: auto;
-    }
-    .next{
-        background-color: #04AA6D;
-        color: white;
-        font-size: 18px;
-        margin-top: 0.5rem;
-        align-content: center;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        width:8rem;
-        float:right;
-    }
-    .next:hover {
-      background-color: #ada;
-      color: black;
-    }
-    .previous{
-        display: block;
-        float:left;
-        background-color: #04AA6D;
-        color: white;
-        font-size: 18px;
-        margin-top: 0.5rem;
-        align-content: center;
-        text-align: center;
-        padding: 8px 16px;
-        text-decoration: none;
-        width:5rem;
-    }
-    .previous:hover {
-      background-color: #ada;
-      color: black;
-    }
-    canvas {
-    display: block;
-}
-.plane{
-    cursor: crosshair;
-}
-.boxhead{
-    margin:0.5rem 0.5rem 0.5rem 0.5rem;
-}
-input{
-    
-    align-content: center;
-    text-align: center;
-    font-style:bold italic;
-    color:white;
-    border:.5px solid red;
-    color: black;
-}   
-/* container */
-.responsive-two-column-grid {
-    display:block;
-}
-
-/* columns */
-.responsive-two-column-grid > * {
-    padding:1rem;
-}
- 
-
-.subbtn{
-        height:auto;
-        width:auto;
-        background-color:#81cdc6;
-        font-size: 1.2rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
-        cursor:pointer;
-    }
-
-    .subbtn1{
-        height:auto;
-        width:auto;
-        background-color:#81cdc6;
-        font-size: 1rem;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        border: 1px solid teal;
-        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
-        cursor:pointer;
-    }
-    
-
-
-    
-.subbtn2{
-        height:auto;
-        width:auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        margin: 0;
-        background: none;
-        border: none;
-        font-size: 1.4rem;
-        border: 1px solid teal;
-        background-color: none;
-    }
-.heading0{
-         height:auto;
-        width:auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        margin: 0;
-        padding-left: 1rem;
-        background-color:#6bd88c;
-        border: none;
-        width: 20%;
-        font-size: 1.7rem;
-        border: 1px solid teal;
-        background-color: none;
-    }
-    .heading{
-         height:auto;
-        width:auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        margin: 0;
-        padding-left: 1rem;
-        background-color:#6bd88c;
-        border: none;
-        width: 67%;
-        font-size: 1.7rem;
-        border: 1px solid teal;
-        background-color: none;
-    }
-    .heading2{
-         height:auto;
-        width:auto;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 600;
-        margin: 0;
-        padding-left: 1rem;
-        background-color:#6bd88c;
-        border: none;
-        width: 81%;
-        font-size: 1.7rem;
-        border: 1px solid teal;
-        background-color: none;
-    }
-/* tablet breakpoint */
-@media (min-width:768px) {
-    .responsive-two-column-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-</style>
 <body>
     <h2 class="pagehead">Linear Map Equation</h2>
 <div class="container">
 
-    <!-- <ul><li>V, W are finite dimentional vector spaces </li>
-        <li> T:V&rarr;W is a linear transformation</li>
-        </ul> -->
-
         <p class="heading0"> Notation: </p>
-    <p> <ul style="font-size: 19px;"><li>Linear map equation: T(x)=b</li>
-        <ul><li>V, W are finite dimensional vector spaces </li>
-        <li> T:V&rarr;W is a linear transformation</li>
-        <li> b &isin; W</li>
+    <p> <ul style="font-size: 19px;"><li>Linear map equation: <b><i>T</i>(<i>x</i>)=<i>b</i></b></li>
+        <ul><li><i>V, W</i> are finite dimensional vector spaces </li>
+        <li> <i>T:V</i>&rarr;<i>W</i> is a linear transformation</li>
+        <li> <i>b</i> &isin; <i>W</i></li>
         </ul>
         </ul></p>
-        <!-- <li>T(x)=b is called linear map equation</li> -->
-    <!-- <img id="mapimg" src="images/exp7img1.png" alt="Map"><br> -->
-    <!-- <button class="subbtn2" id="probbtn" style="font-size: 1.6rem;">To Discuss: </button> -->
-    <!-- <p id="prob"><strong style="font-size: 1.8rem;"></strong><ul style="margin: 0;"><li>Existence</li><li>Uniqueness</li></ul></p> -->
-   
-    <!-- <button class="subbtn2" id="probbtn">Given: </button><br>
-    <p id="prob"><strong style="font-size: 1.8rem;"></strong>
-    <ul><li>V, W are finite dimentional vector spaces </li>
-    <li> T:V&rarr;W linear transformation</li>
-    <li>T(x)=b called lineat map equation</li></ul></p> -->
-   
-    
-   
-
-    <!-- <button class="subbtn2" id="solbtn" style="font-size: 1.6rem;"    onclick="solution()">Discussion:</button><br><br> -->
+       
     <p class="heading"> Consistency (Existence of solution): </p><br>
   <img id="mapimg" src="images/existence.png" alt="Map">
     <div id="exst">
-<p> <ul style="font-size: 19px;"><li> T(x) = b is consistent if 
+<p> <ul style="font-size: 19px;"><li> <i>T</i>(<i>x</i>) = <i>b</i> is consistent if 
     <select id="if1">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
       
     </select> 
     or 
     <select id="if2">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
     </select>
      or 
     <select id="if3">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="ne">b &ne; 0</option>
-      <option value="onto">T is onto</option>
-      <option value="One-to-One">T is one-to-one</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
     </select>
     <br>
     <button class="subbtn1" onclick="checkAnswer()">Submit</button>
       <p id="result"></p>
     </li>
-    <li >T(x) = b is consistent iff 
+    <li ><i>T</i>(<i>x</i>) = <i>b</i> is consistent iff 
     <select id="iff">
       <option value="">--Select--</option>
-      <option value="range">b ∈ Range(T)</option>
-      <option value="zero">b = 0</option>
-      <option value="notin">b ∉ Range(T)</option>
-      <option value="onto">T is onto</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="onto">𝑇 is onto</option>
     </select>
     <br>
     <button class="subbtn1" onclick="checkAnswer1()">Submit</button>
@@ -293,127 +71,28 @@ input{
   </p>
 </div>
     
-        
-
-
     <p class="heading2">Uniqueness of solution (if the solution exists):</p>
      <img id="mapimg" src="images/uniqueness.png" alt="Map">
-    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let T(x) = b be consistent. Then its solution is uniqe iff 
+    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let <i>T</i>(<i>x</i>) = <i>b</i> be consistent. Then its solution is uniqe iff 
     
         <select id="q2">
-      <option value="">--Select an option--</option>
-      <option value="injective">T is one-to-one</option>
-       <option value="notinjective">T is onto</option>
-      <option value="surjective">T is one-to-one and onto</option>
-      <option value="zero">T is zero transformation</option>
+           <option value="">--Select--</option>
+      <option value="injective">𝑇 is one-to-one</option>
+      <option value="notinjective">𝑇 is onto</option>
+      <option value="surjective">𝑇 is one-to-one and onto</option>
+      <option value="zero">𝑇 is zero transformation</option>
+
      
     </select>
     <br>
 <button class="subbtn1" onclick="checkAnswer2()">Submit</button>
   <p id="result2"></p>
     </li></ul>
-    
-
-    
   </p>
-
   
-
-
-        
 </div>
 <p style="float: center; align-content:right;">
 <a href="./example.html" class="next" >Next &raquo;</a></p>
 
 </body>
-<script>
-    function probbtn(){
-        document.getElementById('prob').style.display="";
-        document.getElementById('solbtn').style.display="";
-    }
-    // function solution(){
-    //     document.getElementById('exstbtn').style.display="";
-    //     document.getElementById('uniqe').style.display="";
-    //     document.getElementById('exst').style.display="";
-    //     document.getElementById('puniqe').style.display="";
-    // }
-    function exst(){
-        document.getElementById('exst').style.display="";
-    }
-    function uniqe(){
-        document.getElementById('puniqe').style.display="";
-    }
-
-
-    function checkAnswer() {
-  const ans1 = document.getElementById("if1").value;
-  const ans2 = document.getElementById("if2").value;
-  const ans3 = document.getElementById("if3").value;
-
-  const resultEl = document.getElementById("result");
-
-  if (ans1 === "" || ans2 === "" || ans3 === "") {
-    resultEl.textContent = "⚠️ Please select all options.";
-    resultEl.style.color = "orange";
-    return;
-  }
-
-  // Collect and sort user answers
-  const userAnswers = [ans1, ans2, ans3].sort();
-  // Correct answers (order-independent)
-  const correctAnswers = ["range", "onto", "zero"].sort();
-
-  // Compare arrays
-  const isCorrect = JSON.stringify(userAnswers) === JSON.stringify(correctAnswers);
-
-  if (isCorrect) {
-    resultEl.innerHTML = "<span style='color:black'>Answer:</span> ✅ Correct!";
-    resultEl.style.color = "green";
-  } else {
-    resultEl.innerHTML =
-      "<span style='color:black'>Answer:</span> ❌ Incorrect. <br> T(x) = b is consistent if b &isin; Range(T) or T is onto or b = 0.";
-    resultEl.style.color = "red";
-  }
-}
-
-    function checkAnswer1() {
-      
-      const ans3 = document.getElementById("iff").value;
-      const resultEl = document.getElementById("result1");
-
-      if (ans3 === "") {
-        resultEl.textContent = "⚠️ Please select the answer.";
-        resultEl.style.color = "orange";
-      }
-      else if (ans3 === "range") {
-        resultEl.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct!";
-        resultEl.style.color = "green";
-      } 
-      else {
-        resultEl.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> T(x) = b is consistent iff b &isin; Range R(T).";
-        resultEl.style.color = "red";
-      }
-    }
- 
-
-
-    function checkAnswer2() {
-      const ans = document.getElementById("q2").value;
-      const result = document.getElementById("result2");
-
-      if (ans === "injective") {
-        result.innerHTML = "<span style='color:black'>Answer:</span>✅ Correct! <br> Solution is unique iff T is one-to-one.";
-        result.style.color = "green";
-      } else if (ans === "") {
-        result.textContent = "⚠️ Please select an option.";
-        result.style.color = "orange";
-      } else {
-        result.innerHTML = "<span style='color:black'>Answer:</span>❌ Incorrect. <br> Solution is unique iff T is one-to-one.";
-        result.style.color = "red";
-      }
-    }
-
-</script>
-
-
 </html>
