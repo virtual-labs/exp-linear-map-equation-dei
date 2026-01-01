@@ -9,16 +9,13 @@
                 "c": "More than one solution",
                 "d": "No solution"
             },
-            "correctAnswer": "a",
-            "difficulty": "beginner"
-        },
       "explanations": {
         "a": "Correct. Follows by definition.",
-        "b": "Inorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
         "c": "Incorrect. Follows by definition.",
         "d": "Incorrect. Follows by definition."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
@@ -29,16 +26,14 @@
                 "c": "Unique solution",
                 "d": "System is inconsistent"
         },
-            "correctAnswer": "a",
-            "difficulty": "beginner"
-        },
+         
         "explanations": {
-        "a": "Inorrect. Follows by definition.",
-        "b": "Correct. Follows by definition.",
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
         "c": "Incorrect. Follows by definition.",
         "d": "Incorrect. Follows by definition."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
@@ -49,16 +44,13 @@
                 "c": "Unique solution",
                 "d": "System is inconsistent"
             },
-            "correctAnswer": "d",
-            "difficulty": "beginner"
-        },
         "explanations": {
         "a": "Incorrect. Follows by definition.",
-        "b": "Inorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
         "c": "Incorrect. Follows by definition.",
         "d": "Correct. Follows by definition."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
@@ -69,16 +61,13 @@
                 "c": "$x=1, y=-54$",
                 "d": "None of the above"
             },
-            "correctAnswer": "c",
-            "difficulty": "beginner"
-        },
         "explanations": {
-        "a": "Inorrect. Follows by definition.",
-        "b": "Correct. Follows by definition.",
-        "c": "Incorrect. Follows by definition.",
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Correct. Follows by definition.",
         "d": "Incorrect. Follows by definition."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -89,9 +78,6 @@
                 "c": "$A$ is true, $B$ is true",
                 "d": "$A$ is false, $B$ is false"
             },
-            "correctAnswer": "b",
-            "difficulty": "beginner"
-        }
         "explanations": {
         "a": "Inorrect. Follows by definition.",
         "b": "Correct. Follows by definition.",
