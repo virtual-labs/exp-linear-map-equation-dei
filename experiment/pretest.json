@@ -9,6 +9,12 @@
         "c": "x-axis",
         "d": "y-axis"
       },
+    "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Correct. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -19,6 +25,12 @@
         "b": "$R$<sup>3</sup>",
         "c": "$R$<sup>2</sup>-{0}",
         "d": "$(x, 0)$"
+      },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -31,6 +43,12 @@
         "c": "$T$ is neither one-to-one nor onto",
         "d": "None of the above"
       },
+      "explanations": {
+        "a": "Correct. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
+      },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
@@ -41,6 +59,12 @@
         "b": "(0, 0, 0)∈Range($T$)",
         "c": "(0, 1)∈Range($T$)",
         "d": "(2, 0)∈Range($T$)"
+      },
+      "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Correct. Follows by definition."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -53,6 +77,12 @@
         "c": "Linear and not one-to-one",
         "d": "None of the above"
       },
+      "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Incorrect. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Correct. Follows by definition."
+      },
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
@@ -63,6 +93,12 @@
         "b": "$A$ is false, $B$ is true",
         "c": "$A$ is true, $B$ is true",
         "d": "$A$ is false, $B$ is false"
+      },
+      "explanations": {
+        "a": "Incorrect. Follows by definition.",
+        "b": "Correct. Follows by definition.",
+        "c": "Incorrect. Follows by definition.",
+        "d": "Incorrect. Follows by definition."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
