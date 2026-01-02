@@ -79,7 +79,7 @@
                 "d": "$A$ is false, $B$ is false"
             },
         "explanations": {
-        "a": "Inorrect. Follows by definition.",
+        "a": "Incorrect. Follows by definition.",
         "b": "Correct. Follows by definition.",
         "c": "Incorrect. Follows by definition.",
         "d": "Incorrect. Follows by definition."
