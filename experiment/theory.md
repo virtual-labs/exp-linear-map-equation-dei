@@ -56,7 +56,7 @@ Conversely, let <i>X</i> be a solution of equation (<i>i</i>). Then <i>T</i>(<i>
 (c.) Solution of equation (<i>ii</i>) always exists.<br>
 (d.) Solution of equation (<i>ii</i>) is unique if and only if <i>T</i> is one-to-one.
 ### 4. Remark:
-(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (<i>i</i>) or equation (<i>ii</i>) exist, in general [this is shown in the example 5(ii) below]. 
+(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (<i>i</i>) or equation (<i>ii</i>) exist, in general [this is shown in the example 5(ii) below]. <br>
 (b) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup>  is a one-to-one linear transformation and <i>n</i>=<i>m</i>, then <i>T</i> is onto and hence solution of equation (<i>i</i>) exists. Further, <i>T</i> being one-to-one solution is unique.
 ### 5. Example:
 (a) Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> be the linear transformation defined by <i>T</i>(<i>x, y</i>)=(<i>y, x</i>), where <i>x, y</i>&isin;<i>R</i>. Consider the linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 4). Then solution of linear map equation exists because b&isin;Range of <i>T</i>. Further the solution is unique, since <i>T</i> is one-to-one.<br>
