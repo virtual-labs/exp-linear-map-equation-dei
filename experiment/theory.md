@@ -32,7 +32,7 @@ inconsistent.
 Consider a linear map equation<br>
 <i>T</i>(<i>X</i>)=<i>b</i> …….  (<i>i</i>)<br>
 where <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a linear map and <i>b</i>&isin;<i>R</i> <sup><i>m</i></sup>. Note that in
-particular, if <i>b</i>=0, then the linear map equation equation (<i>i</i>)
+particular, if <i>b</i>=0, then the linear map equation (<i>i</i>)
 reduces to<br>
 <i>T</i>(<i>X</i>)=0 …….  (<i>ii</i>)
 
@@ -43,7 +43,7 @@ By the definition of range <i>T</i>, linear map equation (<i>i</i>) is consisten
 
 #### 3.2. Solution set: 
 (a.) Assume <i>X</i><sub>o</sub> to be a solution of equation (<i>i</i>).Then the solution set, i.e. the collection of all solutions of equation (<i>i</i>) is <i>X</i><sub>0</sub>+ker(<i>T</i>)≡ {<i>X</i><sub>o</sub>+<i>a</i>: <i>a</i>&isin;ker(<i>T</i>)}.<br>
-Reason: If <i>a</i>&isin;ker(<i>T</i>), then <i>T</i>(<i>X</i><sub>o</sub>+<i>a</i>)=<i>T</i>(<i>X</i><sub>o</sub>)+<i>T</i>(<i>a</i>)=<i>b</i>+0=0, so that <i>X</i><sub>o</sub>+<i>a</i> is a solution of linear map equation of equation (<i>i</i>). 
+Reason: If <i>a</i>&isin;ker(<i>T</i>), then <i>T</i>(<i>X</i><sub>o</sub>+<i>a</i>)=<i>T</i>(<i>X</i><sub>o</sub>)+<i>T</i>(<i>a</i>)=<i>b</i>+0=0, so that <i>X</i><sub>o</sub>+<i>a</i> is a solution of linear map equation (<i>i</i>). 
 Conversely, let <i>X</i> be a solution of equation (<i>i</i>). Then <i>T</i>(<i>X</i>)=<i>b</i>. Since <i>X</i>=<i>X</i><sub>o</sub>+(<i>X</i>-<i>X</i><sub>o</sub>) and (<i>X</i>-<i>X</i><sub>o</sub>)&isin;ker(<i>T</i>),  hence <i>X</i>&isin;<i>X</i><sub>o</sub>+ker(<i>T</i>).<br>
 (b.) From 3.1, 0 is a solution of equation (<i>ii</i>). Clearly ker(<i>T</i>) is its solution set.
 #### 3.3 Uniqueness of solution:
