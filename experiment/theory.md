@@ -30,9 +30,9 @@ inconsistent.
 
 ### 3. Solution:
 Consider a linear map equation<br>
-<i>T</i>(<i>X</i>)=<i>b</i> …….  (<i>i</i>)<br>
+<i>T</i>(<i>X</i>)=<i>b</i> …….  (i)<br>
 where <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a linear map and <i>b</i>&isin;<i>R</i> <sup><i>m</i></sup>. Note that in
-particular, if <i>b</i>=0, then the linear map equation (<i>i</i>)
+particular, if <i>b</i>=0, then the linear map equation (i)
 reduces to<br>
 <i>T</i>(<i>X</i>)=0 …….  (<i>ii</i>)
 
