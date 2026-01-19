@@ -34,30 +34,30 @@ Consider a linear map equation<br>
 where <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a linear map and <i>b</i>&isin;<i>R</i> <sup><i>m</i></sup>. Note that in
 particular, if <i>b</i>=0, then the linear map equation (i)
 reduces to<br>
-<i>T</i>(<i>X</i>)=0 …….  (<i>ii</i>)
+<i>T</i>(<i>X</i>)=0 …….  (ii)
 
 #### 3.1. Condition for existence: 
-By the definition of range <i>T</i>, linear map equation (<i>i</i>) is consistent if and only if <i>b</i>&isin;Range of <i>T</i>.  However, the linear map equation (<i>ii</i>) is always consistent, since <i>T</i> being linear <i>T</i>(0) =0. 
+By the definition of range <i>T</i>, linear map equation (i) is consistent if and only if <i>b</i>&isin;Range of <i>T</i>.  However, the linear map equation (ii) is always consistent, since <i>T</i> being linear <i>T</i>(0) =0. 
 
 ![Condition for existence](images/exp7image3.PNG "Condition for existence")<br>
 
 #### 3.2. Solution set: 
-(a.) Assume <i>X</i><sub>o</sub> to be a solution of equation (<i>i</i>).Then the solution set, i.e. the collection of all solutions of equation (<i>i</i>) is <i>X</i><sub>0</sub>+ker(<i>T</i>)≡ {<i>X</i><sub>o</sub>+<i>a</i>: <i>a</i>&isin;ker(<i>T</i>)}.<br>
-Reason: If <i>a</i>&isin;ker(<i>T</i>), then <i>T</i>(<i>X</i><sub>o</sub>+<i>a</i>)=<i>T</i>(<i>X</i><sub>o</sub>)+<i>T</i>(<i>a</i>)=<i>b</i>+0=0, so that <i>X</i><sub>o</sub>+<i>a</i> is a solution of linear map equation (<i>i</i>). 
-Conversely, let <i>X</i> be a solution of equation (<i>i</i>). Then <i>T</i>(<i>X</i>)=<i>b</i>. Since <i>X</i>=<i>X</i><sub>o</sub>+(<i>X</i>-<i>X</i><sub>o</sub>) and (<i>X</i>-<i>X</i><sub>o</sub>)&isin;ker(<i>T</i>),  hence <i>X</i>&isin;<i>X</i><sub>o</sub>+ker(<i>T</i>).<br>
-(b.) From 3.1, 0 is a solution of equation (<i>ii</i>). Clearly ker(<i>T</i>) is its solution set.
+(a.) Assume <i>X</i><sub>o</sub> to be a solution of equation (i</i>).Then the solution set, i.e. the collection of all solutions of equation (i) is <i>X</i><sub>0</sub>+ker(<i>T</i>)≡ {<i>X</i><sub>o</sub>+<i>a</i>: <i>a</i>&isin;ker(<i>T</i>)}.<br>
+Reason: If <i>a</i>&isin;ker(<i>T</i>), then <i>T</i>(<i>X</i><sub>o</sub>+<i>a</i>)=<i>T</i>(<i>X</i><sub>o</sub>)+<i>T</i>(<i>a</i>)=<i>b</i>+0=0, so that <i>X</i><sub>o</sub>+<i>a</i> is a solution of linear map equation (i). 
+Conversely, let <i>X</i> be a solution of equation (i). Then <i>T</i>(<i>X</i>)=<i>b</i>. Since <i>X</i>=<i>X</i><sub>o</sub>+(<i>X</i>-<i>X</i><sub>o</sub>) and (<i>X</i>-<i>X</i><sub>o</sub>)&isin;ker(<i>T</i>),  hence <i>X</i>&isin;<i>X</i><sub>o</sub>+ker(<i>T</i>).<br>
+(b.) From 3.1, 0 is a solution of equation (ii). Clearly ker(<i>T</i>) is its solution set.
 #### 3.3 Uniqueness of solution:
-(a.) Let solution of equation (<i>i</i>) exist. Then solution is unique if and only if <i>T</i> is one-to-one by the definition of one-to-one map.<br>
-(b.) Solution of equation (<i>ii</i>) is unique if and only if <i>T</i> is one-to-one by definition. [Note that solution of equation (<i>ii</i>) always exists.]
+(a.) Let solution of equation (i) exist. Then solution is unique if and only if <i>T</i> is one-to-one by the definition of one-to-one map.<br>
+(b.) Solution of equation (ii) is unique if and only if <i>T</i> is one-to-one by definition. [Note that solution of equation (ii) always exists.]
 ![Uniqueness of solution](images/exp7image4.PNG "Uniqueness of solution")<br>
 #### 3.4. Summary:
-(a.) Solution of equation (<i>i</i>) may or may not exist.<br>
-(b.) Solution of equation (<i>i</i>) is unique if and only if <i>T</i> is one-to-one, provided solution exists.<br>
-(c.) Solution of equation (<i>ii</i>) always exists.<br>
-(d.) Solution of equation (<i>ii</i>) is unique if and only if <i>T</i> is one-to-one.
+(a.) Solution of equation (i) may or may not exist.<br>
+(b.) Solution of equation (i) is unique if and only if <i>T</i> is one-to-one, provided solution exists.<br>
+(c.) Solution of equation (ii) always exists.<br>
+(d.) Solution of equation (ii) is unique if and only if <i>T</i> is one-to-one.
 ### 4. Remark:
-(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (<i>i</i>) or equation (<i>ii</i>) exist, in general [this is shown in the example 5(ii) below]. <br>
-(b) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup>  is a one-to-one linear transformation and <i>n</i>=<i>m</i>, then <i>T</i> is onto and hence solution of equation (<i>i</i>) exists. Further, <i>T</i> being one-to-one solution is unique.
+(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (i) or equation (ii) exist, in general [this is shown in the example 5(ii) below]. <br>
+(b) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup>  is a one-to-one linear transformation and <i>n</i>=<i>m</i>, then <i>T</i> is onto and hence solution of equation (i) exists. Further, <i>T</i> being one-to-one solution is unique.
 ### 5. Example:
 (a) Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>2</sup> be the linear transformation defined by <i>T</i>(<i>x, y</i>)=(<i>y, x</i>), where <i>x, y</i>&isin;<i>R</i>. Consider the linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 4). Then solution of linear map equation exists because b&isin;Range of <i>T</i>. Further the solution is unique, since <i>T</i> is one-to-one.<br>
 (b) Let <i>T</i>:<i>R</i><sup>2</sup>→<i>R</i><sup>3</sup> be the linear transformation defined by <i>T</i>(<i>x, y</i>)=(<i>x</i>-<i>y</i>, 0), where <i>x, y</i>&isin;<i>R</i>. Consider the linear map equation <i>T</i>(<i>X</i>)=<i>b</i>, where <i>b</i>=(1, 4, 1). Notice that this linear map equation is not consistent and <i>T</i> is one-to-one. This shows that solution of linear map equation may not exist even if <i>T</i> is one-to-one.
