@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script src="js/js2.js" defer></script>
+</head>
+<body>
+    <h2 class="pagehead">Examples</h2>
+<div class="container">
+ 
+    <div class="container2">
+        <div class="text" style="margin-left: 15px;">
+            <p><i>T:R</i><sup>2</sup>&rarr;<i>R</i><sup>2</sup><br><i>T</i>(<i>a, d</i>) = (<i>a</i>, 2<i>a</i>); (<i>a, d</i>) &isin; <i>R</i><sup>2</sup></p>
+        </div>
+        <div class="image">
+            <img src="images/range.png" id="rngimg" alt="RangeT">
+        </div>
+    </div>
+    <div class="case5">
+       
+        <p style="font-size: 24px;" ><b>&emsp;Example 1:</b> <i>T</i>(<i>x</i>) = <i>b</i>, where <i>b</i> = (1, 2)</p>
+        
+        <ul style="margin-left:15px;"><p style="font-size: 20px;" ><b>1.1</b> What do you infer? <input id="btn1" class="subbtn2" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="Consistent">
+             / 
+             <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" class="subbtn2" value="Inconsistent"></p>
+        <p id="c5ld" style="font-size: 20px;"></p>
+        <p id="c5li" style="font-size: 20px;"></p>
+        <form id="solutionForm" style="display: none;">
+        <p id="sol" style="font-size: 20px;"><b>1.2</b> Solutions: 
+           
+                <label for="p">p:</label>
+                <input type="number" id="p" name="p" required>
+              
+                <label for="q">q:</label>
+                <input type="number" id="q" name="q" required>
+                <br>
+                <input type="submit" class="subbtn2" value="Check Answer" style="margin-left: 340px; margin-top: 20px;">
+            </form>
+            <p id="result" style="font-size: 20px;"></p>
+            <p id="ressol" style="font-size: 20px;" ></p></ul>
+        </p>
+    </div>
+    <div class="case5">
+       
+        <p style="font-size: 24px;" ><b>&emsp;Example 2:</b> <i>T</i>(<i>x</i>) = <i>b</i>, where <i>b</i> = (2, 3)</p>
+        
+       <ul style="margin-left:15px;">
+        <p style="font-size: 20px;" ><b>2.1</b> What do you infer? 
+        <input id="btn3" class="subbtn2"  type="submit" onclick="c6ld('btn3'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn4.style.backgroundColor = 'lightgrey'; " value="Consistent">
+         / 
+         <input id="btn4" type="submit" onclick="c6li('btn4'); this.style.backgroundColor = 'red'; btn3.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" class="subbtn2" value="Inconsistent">
+        </p> 
+        <p id="c6ld" style="font-size: 20px;"></p>                                             
+        <p id="c6li" style="font-size: 20px;"></p></ul>
+    </div>
+
+    <p style="font-size: 24px;" ><b>&emsp;More Examples By Construction of More Equations:</b></p>
+    
+        <div id="Cle">
+     <p>&emsp;Choose <i>b</i> = (<i>r, s</i>) by entering values of <i>r</i> and <i>s</i></p>
+        <label for="xInput">&emsp;<i>r</i>:</label>
+        <input type="number" id="xInput" min="-4" max="14">
+        <label for="yInput"><i>s</i>:</label>
+        <input type="number" id="yInput" min="-9" max="9">
+        <button class="subbtn2" onclick="plotPoint()">Submit</button><br>
+
+   
+        <p id="equation"></p> </div>
+        <p id="constbtn" style="display: none;"><b>&emsp;Consistency :</b></p><br>
+        <div id="canvas" class="responsive-two-column-grid" style="display: none;">
+            <div>
+                <canvas id="my-canvas" width="250" height="250"></canvas>
+            </div>
+            <div>
+                <p id='printpoint1cords'></p>
+                
+            </div>
+        </div>
+
+        <p id='solutionexist' style="display: none; font-size: 24px;"></p>
+        
+</div>
+<p style="float: center; align-content:right;">
+<a href="./" class="previous">&laquo; Previous</a></p>
+
+</body>
+</html>
+
+
+
