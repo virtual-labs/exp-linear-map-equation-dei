@@ -1,4 +1,4 @@
-<span style="font-family: 'Times New Roman'; font-size: 22px;">This experiment deals with the study of a linear map equation and its consistency. If it is consistent, the question whether solution is unique or not will be explored. Various examples are given to understand the concepts. The present study helps in developing a deeper understanding of consistency of a system of linear equations and its solution set.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">This experiment deals with the study of a linear map equation and its consistency. If it is consistent, the question whether solution is unique or not will be explored. Various examples are given to understand the concepts. The present study helps in the next experiment in developing a deeper understanding of consistency of a system of linear equations and its solution set.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Linear map equation:</span>**
 
