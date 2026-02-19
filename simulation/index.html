@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script src="js/js1.js"></script>
+</head>
+<body>
+    <h2 class="pagehead">Linear Map Equation</h2>
+<div class="container">
+
+        <p class="heading0"> Notation: </p>
+    <p> <ul style="font-size: 19px;"><li>Linear map equation: <b><i>T</i>(<i>x</i>)=<i>b</i></b></li>
+        <ul><li><i>V, W</i> are finite dimensional vector spaces </li>
+        <li> <i>T:V</i>&rarr;<i>W</i> is a linear transformation</li>
+        <li> <i>b</i> &isin; <i>W</i></li>
+        </ul>
+        </ul></p>
+       
+    <p class="heading"> Consistency (Existence of solution): </p><br>
+  <img id="mapimg" src="images/existence.png" alt="Map">
+    <div id="exst">
+<p> <ul style="font-size: 19px;"><li> <i>T</i>(<i>x</i>) = <i>b</i> is consistent if 
+    <select id="if1">
+      <option value="">--Select--</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
+      
+    </select> 
+    or 
+    <select id="if2">
+      <option value="">--Select--</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
+    </select>
+     or 
+    <select id="if3">
+      <option value="">--Select--</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="ne">𝑏 &ne; 0</option>
+      <option value="onto">𝑇 is onto</option>
+      <option value="One-to-One">𝑇 is one-to-one</option>
+    </select>
+    <br>
+    <button class="subbtn1" onclick="checkAnswer()">Submit</button>
+      <p id="result"></p>
+    </li>
+    <li ><i>T</i>(<i>x</i>) = <i>b</i> is consistent iff 
+    <select id="iff">
+      <option value="">--Select--</option>
+      <option value="range">𝑏 ∈ Range(𝑇)</option>
+      <option value="zero">𝑏 = 0</option>
+      <option value="notin">𝑏 ∉ Range(𝑇)</option>
+      <option value="onto">𝑇 is onto</option>
+    </select>
+    <br>
+    <button class="subbtn1" onclick="checkAnswer1()">Submit</button>
+  <p id="result1"></p>
+  </li></ul>
+  </p>
+</div>
+    
+    <p class="heading2">Uniqueness of solution (if the solution exists):</p>
+     <img id="mapimg" src="images/uniqueness.png" alt="Map">
+    <p id="puniqe" ><ul style="font-size: 19px;"> <li> Let <i>T</i>(<i>x</i>) = <i>b</i> be consistent. Then its solution is uniqe iff 
+    
+        <select id="q2">
+           <option value="">--Select--</option>
+      <option value="injective">𝑇 is one-to-one</option>
+      <option value="notinjective">𝑇 is onto</option>
+      <option value="surjective">𝑇 is one-to-one and onto</option>
+      <option value="zero">𝑇 is zero transformation</option>
+
+     
+    </select>
+    <br>
+<button class="subbtn1" onclick="checkAnswer2()">Submit</button>
+  <p id="result2"></p>
+    </li></ul>
+  </p>
+  
+</div>
+<p style="float: center; align-content:right;">
+<a href="./example.html" class="next" >Next &raquo;</a></p>
+
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
