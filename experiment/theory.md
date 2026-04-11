@@ -7,8 +7,8 @@ The linear map equation <i>T</i>(<i>X</i>)=<i>b</i> is called consistent if it
 has a solution, i.e. if there exists <i>X</i>&isin;<i>R</i><sup><i>n</i></sup> such that
 <i>T</i>(<i>X</i>)=<i>b</i>. If it is not consistent, then it is called
 inconsistent. Note that for <i>X</i>&isin;<i>R</i><sup><i>n</i></sup>, <i>X</i>≡(<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, …, <i>x</i><sub><i>n</i></sub> )
-and <i>T</i>(<i>X</i>)&isin;<i>R</i><sup><i>m</i></sup>; where <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, …, <i>x</i><sub><i>n</i></sub> &isin;<i>R</i>. For <i>n</i>=2,
-<i>X</i>≡( <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub> ) or (<i>x, y</i>), where <i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x, y</i>&isin;<i>R</i>.</span><br>
+and <i>T</i>(<i>X</i>)&isin;<i>R</i><sup><i>m</i></sup>; where <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, …, <i>x</i><sub><i>n</i></sub> &isin;<i>R</i>. For <i>n</i>=2 and <i>m</i>=3,
+<i>X</i>≡( <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub> ) or (<i>x, y</i>) and<i>T</i>(<i>X</i>)&isin;<i>R</i><sup><i>3</i></sup>, where <i>x</i><sub>1</sub> , <i>x</i><sub>2</sub> , <i>x, y</i>&isin;<i>R</i>.</span><br>
 
 ![Linear map equation](images/exp7image2.PNG "Linear map equation")<br>
 
@@ -56,7 +56,7 @@ Conversely, let <i>X</i> be a solution of equation (<i>i</i>). Then <i>T</i>(<i>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.3 Uniqueness of solution:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(a.) Let solution of equation (<i>i</i>) exist. Then solution is unique if and only if <i>T</i> is one-to-one by the definition of one-to-one map.<br>
-(b.) Solution of equation (<i>ii</i>) is unique if and only if <i>T</i> is one-to-one by definition. [Note that solution of equation (<i>ii</i>) always exists.]</span><br>
+(b.) Solution of equation (<i>ii</i>) is unique if and only if <i>T</i> is one-to-one by definition of one-to-one map. [Note that solution of equation (<i>ii</i>) always exists.]</span><br>
 ![Uniqueness of solution](images/exp7image4.PNG "Uniqueness of solution")
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.4. Summary:</span>**
@@ -68,7 +68,7 @@ Conversely, let <i>X</i> be a solution of equation (<i>i</i>). Then <i>T</i>(<i>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Remark:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (<i>i</i>) or equation (<i>ii</i>) exist, in general [this is shown in the example 5(ii) below]. <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(a) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup> is a one-to-one linear transformation, then it does not imply that solution of equation (<i>i</i>) or equation (<i>ii</i>) exist, in general [this is shown in the example 5(b) below]. <br>
 (b) If <i>T</i>:<i>R</i><sup><i>n</i></sup>→<i>R</i><sup><i>m</i></sup>  is a one-to-one linear transformation and <i>n</i>=<i>m</i>, then <i>T</i> is onto and hence solution of equation (<i>i</i>) exists. Further, <i>T</i> being one-to-one solution is unique.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">5. Example:</span>**
