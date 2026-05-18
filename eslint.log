@@ -1,0 +1,16 @@
+
+/home/runner/work/exp-linear-map-equation-dei/exp-linear-map-equation-dei/experiment/simulation/js/js1.js
+   2:14  warning  'checkAnswer' is defined but never used   no-unused-vars
+  33:14  warning  'checkAnswer1' is defined but never used  no-unused-vars
+  54:14  warning  'checkAnswer2' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-linear-map-equation-dei/exp-linear-map-equation-dei/experiment/simulation/js/js2.js
+    2:10  warning  'c5ld' is defined but never used        no-unused-vars
+    7:13  warning  'c5li' is defined but never used        no-unused-vars
+   12:13  warning  'c6ld' is defined but never used        no-unused-vars
+   16:13  warning  'c6li' is defined but never used        no-unused-vars
+  167:10  warning  'plotPoint' is defined but never used   no-unused-vars
+  223:17  warning  'q' is assigned a value but never used  no-unused-vars
+
+✖ 9 problems (0 errors, 9 warnings)
+
