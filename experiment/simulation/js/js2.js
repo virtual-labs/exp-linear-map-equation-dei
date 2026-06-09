@@ -10,11 +10,11 @@ function c5ld(){
        document.getElementById('solutionForm').style.display="";
    }
    function c6ld(){
-       document.getElementById('c6ld').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span>❌ Incorrect! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
+       document.getElementById('c6ld').innerHTML='<span style="color:red";><span style="color:black"> Answer:</span>❌ Incorrect! Equation is inconsistent.</span><br><br> Reason:&emsp; (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
        document.getElementById('c6li').innerHTML='';
    }
    function c6li(){
-       document.getElementById('c6li').innerHTML='<span style="color:Green";><span style="color:black"> Answer: ✅ </span>Correct! Equation is inconsistent.</span><br><br> Reason:&emsp; Let (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
+       document.getElementById('c6li').innerHTML='<span style="color:Green";><span style="color:black"> Answer: ✅ </span>Correct! Equation is inconsistent.</span><br><br> Reason:&emsp; (2, 3) &isin; Range <i>T</i> <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &rArr; (2, 3) = <i>T</i>(<i>p, q</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr; (2, 3) = (<i>p</i>, 2<i>p</i>) <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  &rArr;  <i>p</i> = 2 and 2<i>p</i> = 3, a contradiction';
        document.getElementById('c6ld').innerHTML='';
    }
 
@@ -226,11 +226,19 @@ document.getElementById("solutionForm").addEventListener("submit", function(even
             if (p === 1) {
                 resultElement.innerHTML = "<span style='color:black'> Answer: </span>Correct solution!";
                 resultElement.style.color ="Green"
-                document.getElementById("ressol").innerHTML = "Reason:&emsp;(<i>p, q</i>) is a solution if <i>T</i>(<i>p, q</i>) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (<i>p</i>, 2<i>p</i>) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; <i>p</i> = 1</span> <br><br> Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
+                document.getElementById("ressol").innerHTML =
+"Reason:&emsp;(<i>p, q</i>) is a solution <br><span style='display:inline-block; padding-left:78px;'> iff <i>T</i>(<i>p, q</i>) = (1 , 2)</span><br>" +
+"<span style='display:inline-block; padding-left:78px;'>iff (<i>p</i>, 2<i>p</i>) = (1, 2)</span><br>" +
+"<span style='display:inline-block; padding-left:78px;'>iff <i>p</i> = 1</span><br><br>" +
+"Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
             
             } else {
                 resultElement.innerHTML = "<span style='color:black'>Answer: </span>Incorrect solution!";
                 resultElement.style.color ="red"
-                document.getElementById("ressol").innerHTML = "Reason:&emsp;(<i>p, q</i>) is a solution if <i>T</i>(<i>p, q</i>) = (1 , 2)<br><span style='margin-left:62px;'>&rArr; (<i>p</i>, 2<i>p</i>) = (1, 2);</span><br> <span style='margin-left:61px;'>&rArr; <i>p</i> = 1</span> <br><br> Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
+                document.getElementById("ressol").innerHTML =
+"Reason:&emsp;(<i>p, q</i>) is a solution <br><span style='display:inline-block; padding-left:78px;'> iff <i>T</i>(<i>p, q</i>) = (1 , 2)</span><br>" +
+"<span style='display:inline-block; padding-left:78px;'>iff (<i>p</i>, 2<i>p</i>) = (1, 2)</span><br>" +
+"<span style='display:inline-block; padding-left:78px;'>iff <i>p</i> = 1</span><br><br>" +
+"Solutions : (1, <i>q</i>), <i>q</i>&isin;<i>R</i>";
             }
         });
